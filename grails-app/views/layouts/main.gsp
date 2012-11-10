@@ -24,6 +24,19 @@
 					<img src="${resource(dir: 'images', file: 'logo_uabc.png')}" alt="Trapo"/>
 					<h1 id="titulo">Proyecto Trapo</span>
 				</a>
+				<div id="userInfo">
+					<sec:ifLoggedIn>
+						<span id="username">Bienvenido <sec:loggedInUserInfo field="username"/> </span>
+						<span class="sesion">
+							<g:link controller='logout' action='index'>Cerrar Sesión</g:link>
+						</span>						
+					</sec:ifLoggedIn>
+					<sec:ifNotLoggedIn>
+						<span class="sesion">
+							<g:link controller='login' action='auth'>Iniciar Sesión</g:link>
+						</span>						
+					</sec:ifNotLoggedIn>
+				</div>
 			</div>
 
 			%{-- Aqui va el codigo de las views que lo llamen --}%
