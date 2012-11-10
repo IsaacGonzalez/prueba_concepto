@@ -57,19 +57,6 @@ body {
 #grailsLogo a img{
 
 }
-#titulo{	
-	display: inline-block;
-	margin: 0px;
-	padding: 0px;
-}
-#titulo a{
-	text-decoration: none;
-	font-size: 24px;
-	font-weight: bold;
-}
-.sesion a{
-	font-size: 12px;	
-}
 
 /* replace with .no-boxshadow body if you have modernizr available */
 .ie6 body,
@@ -109,7 +96,7 @@ img {
 
 /* GENERAL */
 #pagewrapper{
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 #grailsLogo a {

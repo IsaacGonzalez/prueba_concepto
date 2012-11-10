@@ -23,6 +23,24 @@
 			</g:if>
 			<ol class="property-list administrativo">
 			
+				<g:if test="${administrativoInstance?.username}">
+				<li class="fieldcontain">
+					<span id="username-label" class="property-label"><g:message code="administrativo.username.label" default="Username" /></span>
+					
+						<span class="property-value" aria-labelledby="username-label"><g:fieldValue bean="${administrativoInstance}" field="username"/></span>
+					
+				</li>
+				</g:if>
+			
+				%{-- <g:if test="${administrativoInstance?.password}">
+				<li class="fieldcontain">
+					<span id="password-label" class="property-label"><g:message code="administrativo.password.label" default="Password" /></span>
+					
+						<span class="property-value" aria-labelledby="password-label"><g:fieldValue bean="${administrativoInstance}" field="password"/></span>
+					
+				</li> --}%
+				</g:if>
+			
 				<g:if test="${administrativoInstance?.numeroEmpleado}">
 				<li class="fieldcontain">
 					<span id="numeroEmpleado-label" class="property-label"><g:message code="administrativo.numeroEmpleado.label" default="Numero Empleado" /></span>
@@ -59,20 +77,47 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${administrativoInstance?.contrasena}">
-				<li class="fieldcontain">
-					<span id="contrasena-label" class="property-label"><g:message code="administrativo.contrasena.label" default="Contrasena" /></span>
-					
-						<span class="property-value" aria-labelledby="contrasena-label"><g:fieldValue bean="${administrativoInstance}" field="contrasena"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${administrativoInstance?.puesto}">
 				<li class="fieldcontain">
 					<span id="puesto-label" class="property-label"><g:message code="administrativo.puesto.label" default="Puesto" /></span>
 					
 						<span class="property-value" aria-labelledby="puesto-label"><g:fieldValue bean="${administrativoInstance}" field="puesto"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${administrativoInstance?.accountExpired}">
+				<li class="fieldcontain">
+					<span id="accountExpired-label" class="property-label"><g:message code="administrativo.accountExpired.label" default="Account Expired" /></span>
+					
+						<span class="property-value" aria-labelledby="accountExpired-label"><g:formatBoolean boolean="${administrativoInstance?.accountExpired}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${administrativoInstance?.accountLocked}">
+				<li class="fieldcontain">
+					<span id="accountLocked-label" class="property-label"><g:message code="administrativo.accountLocked.label" default="Account Locked" /></span>
+					
+						<span class="property-value" aria-labelledby="accountLocked-label"><g:formatBoolean boolean="${administrativoInstance?.accountLocked}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${administrativoInstance?.enabled}">
+				<li class="fieldcontain">
+					<span id="enabled-label" class="property-label"><g:message code="administrativo.enabled.label" default="Enabled" /></span>
+					
+						<span class="property-value" aria-labelledby="enabled-label"><g:formatBoolean boolean="${administrativoInstance?.enabled}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${administrativoInstance?.passwordExpired}">
+				<li class="fieldcontain">
+					<span id="passwordExpired-label" class="property-label"><g:message code="administrativo.passwordExpired.label" default="Password Expired" /></span>
+					
+						<span class="property-value" aria-labelledby="passwordExpired-label"><g:formatBoolean boolean="${administrativoInstance?.passwordExpired}" /></span>
 					
 				</li>
 				</g:if>

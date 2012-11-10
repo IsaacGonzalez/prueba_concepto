@@ -8,6 +8,7 @@ class Usuario extends User{
 	Usuario supervisor
 	String nombre
 	String apellidos
+    boolean enabled = true
 	// static hasMany = [formatos: Formato] ???
 
 
