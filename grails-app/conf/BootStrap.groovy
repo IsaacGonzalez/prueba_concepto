@@ -11,46 +11,47 @@ class BootStrap {
 
     def init = { servletContext ->
 
-        int numeroEmpleado = 1
+        switch(GrailsUtil.environment) {
+            case "development":     // para que esto solo pase en modo de development
+                int numeroEmpleado = 1
 
-        // creamos los usuarios
-        def usuario = new Usuario (
-                username    : "usuario",
-                password    : "123456",
-                enabled     : true,
-                numeroEmpleado : numeroEmpleado,
-                nombre      : "usuario",
-                apellidos   : "usuario",
-                supervisor  : null
-            )
+                // creamos los usuarios
+                def usuario = new Usuario (
+                        username    : "usuario",
+                        password    : "123456",
+                        enabled     : true,
+                        numeroEmpleado : numeroEmpleado,
+                        nombre      : "usuario",
+                        apellidos   : "usuario",
+                        supervisor  : null
+                    )
 
-        usuario.save()
-        numeroEmpleado++
+                usuario.save()
+                numeroEmpleado++
 
-        def leopoldo = new Docente (
-                username    : "leopoldo",
-                password    : "diagramas",
-                enabled     : true,
-                numeroEmpleado : numeroEmpleado,
-                nombre      : "Leopoldo",
-                apellidos   : "Dominguez",
-                supervisor  : usuario
-            )
+                def leopoldo = new Docente (
+                        username    : "leopoldo",
+                        password    : "diagramas",
+                        enabled     : true,
+                        numeroEmpleado : numeroEmpleado,
+                        nombre      : "Leopoldo",
+                        apellidos   : "Dominguez",
+                        supervisor  : usuario
+                    )
 
-        leopoldo.save(failOnError: true)        
-        numeroEmpleado++
+                leopoldo.save(failOnError: true)        
+                numeroEmpleado++
 
-        // creamos los roles para nuestra aplicacion
-        def userRole = new Role (authority: "ROLE_USER").save()
-        def adminRole = new Role (authority: "ROLE_ADMIN").save()
+                // creamos los roles para nuestra aplicacion
+                def userRole = new Role (authority: "ROLE_USER").save()
+                def adminRole = new Role (authority: "ROLE_ADMIN").save()
 
-        // asignamos los roles        
-        if (!usuario.authorities.contains(adminRole)) {
-            UserRole.create usuario, adminRole
+                // asignamos los roles        
+                if (!usuario.authorities.contains(adminRole)) {
+                    UserRole.create usuario, adminRole
+                }
+            break
         }
-
-
-
     }
 
     def destroy = {
