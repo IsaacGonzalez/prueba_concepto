@@ -11,7 +11,18 @@ import org.junit.*
 @TestFor(Usuario)
 class UsuarioTests {
 
-    void testSomething() {
-       fail "Implement me"
+    void crearUsuario(){
+    	def usuario = new Usuario (
+                username    : "usuario",
+                password    : "123456",
+                enabled     : true,
+                numeroEmpleado : 1,
+                nombre      : "usuario",
+                apellidos   : "usuario",
+                supervisor  : null
+            )
+		
+
+        assertEquals 1, usuario.numeroEmpleado
     }
 }
