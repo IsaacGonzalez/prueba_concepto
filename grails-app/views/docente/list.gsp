@@ -25,8 +25,8 @@
 					<tr>
 					
 						<g:sortableColumn property="username" title="${message(code: 'docente.username.label', default: 'Username')}" />
-						%{-- Escondemos el password --}%
-						%{-- <g:sortableColumn property="password" title="${message(code: 'docente.password.label', default: 'Password')}" /> --}%
+					
+						<g:sortableColumn property="password" title="${message(code: 'docente.password.label', default: 'Password')}" />
 					
 						<g:sortableColumn property="numeroEmpleado" title="${message(code: 'docente.numeroEmpleado.label', default: 'Numero Empleado')}" />
 					
@@ -43,8 +43,8 @@
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
 						<td><g:link action="show" id="${docenteInstance.id}">${fieldValue(bean: docenteInstance, field: "username")}</g:link></td>
-						%{-- Escondemos tambien el password aqui --}%
-						%{-- <td>${fieldValue(bean: docenteInstance, field: "password")}</td> --}%
+					
+						<td>${fieldValue(bean: docenteInstance, field: "password")}</td>
 					
 						<td>${fieldValue(bean: docenteInstance, field: "numeroEmpleado")}</td>
 					

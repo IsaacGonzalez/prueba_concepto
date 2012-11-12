@@ -10,48 +10,82 @@ import org.springsecurity.UserRole
 class BootStrap {
 
     def init = { servletContext ->
+        
+        int numeroEmpleado = 1
 
-        switch(GrailsUtil.environment) {
-            case "development":     // para que esto solo pase en modo de development
-                int numeroEmpleado = 1
+        // creamos los usuarios
+        def usuario = new Usuario (
+                username    : "usuario",
+                password    : "123456",
+                enabled     : true,
+                numeroEmpleado : numeroEmpleado,
+                nombre      : "usuario",
+                apellidos   : "usuario",
+                supervisor  : null
+            )
 
-                // creamos los usuarios
-                def usuario = new Usuario (
-                        username    : "usuario",
-                        password    : "123456",
-                        enabled     : true,
-                        numeroEmpleado : numeroEmpleado,
-                        nombre      : "usuario",
-                        apellidos   : "usuario",
-                        supervisor  : null
-                    )
+        usuario.save()
+        numeroEmpleado++        
 
-                usuario.save()
-                numeroEmpleado++
+        def aglay = new CoordinadorCarrera (
+                username    : "aglay",
+                password    : "123456",
+                enabled     : true,
+                numeroEmpleado : numeroEmpleado,
+                nombre      : "Aglay",
+                apellidos   : "Gonzalez",
+                supervisor  : null
+            )
 
-                def leopoldo = new Docente (
-                        username    : "leopoldo",
-                        password    : "diagramas",
-                        enabled     : true,
-                        numeroEmpleado : numeroEmpleado,
-                        nombre      : "Leopoldo",
-                        apellidos   : "Dominguez",
-                        supervisor  : usuario
-                    )
+        aglay.save(failOnError: true)        
+        numeroEmpleado++
 
-                leopoldo.save(failOnError: true)        
-                numeroEmpleado++
+        def leopoldo = new Docente (
+                username    : "leopoldo",
+                password    : "diagramas",
+                enabled     : true,
+                numeroEmpleado : numeroEmpleado,
+                nombre      : "Leopoldo",
+                apellidos   : "Dominguez",
+                supervisor  : aglay
+            )
 
-                // creamos los roles para nuestra aplicacion
-                def userRole = new Role (authority: "ROLE_USER").save()
-                def adminRole = new Role (authority: "ROLE_ADMIN").save()
+        leopoldo.save(failOnError: true)        
+        numeroEmpleado++
 
-                // asignamos los roles        
-                if (!usuario.authorities.contains(adminRole)) {
-                    UserRole.create usuario, adminRole
-                }
-            break
+        def ruelas = new Docente (
+                username    : "ruelas",
+                password    : "123456",
+                enabled     : true,
+                numeroEmpleado : numeroEmpleado,
+                nombre      : "Adolfo",
+                apellidos   : "Ruelas",
+                supervisor  : aglay
+            )
+
+        ruelas.save(failOnError: true)        
+        numeroEmpleado++
+
+
+        // creamos los roles para nuestra aplicacion
+        def userRole = new Role (authority: "ROLE_USER").save()
+        def adminRole = new Role (authority: "ROLE_ADMIN").save()        
+        def rolDirector = new Role (authority: "ROLE_DIRECTOR").save()        
+
+        def usuarios = [leopoldo, ruelas, aglay]
+
+        for(user in usuarios){
+            // asignamos los roles        
+            if (!user.authorities.contains(adminRole)) {
+                UserRole.create user, adminRole
+            }
         }
+
+        if (!ruelas.authorities.contains(rolDirector)) {
+                UserRole.create ruelas, rolDirector
+            }
+            
+        
     }
 
     def destroy = {

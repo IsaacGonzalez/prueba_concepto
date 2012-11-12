@@ -15,7 +15,7 @@
 		<g:message code="coordinadorCarrera.password.label" default="Password" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="password" required="" value="${coordinadorCarreraInstance?.password}"/>
+	<g:field type="password" name="password" required="" value="${coordinadorCarreraInstance?.password}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: coordinadorCarreraInstance, field: 'numeroEmpleado', 'error')} required">

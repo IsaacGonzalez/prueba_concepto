@@ -17,4 +17,5 @@ class Formato {
     	estaCompleto nullable: false
     	estadoAvance nullable: false, inlist : [0,1]
     }
+
 }

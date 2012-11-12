@@ -58,6 +58,10 @@
 		padding-left: 120px;
 	}
 
+	#remember_me_holder {
+		display: inline;
+	}
+
 	#login #submit {
 		margin-left: 15px;
 	}
@@ -88,7 +92,7 @@
 <div id='login'>
 	<div class='inner'>
 		%{-- <div class='fheader'><g:message code="springSecurity.login.header"/></div> --}%
-		<div class='fheader'>Ingrese su nombre de Username y Password</div>
+		<div class='fheader'>Ingrese su Username y Password</div>
 
 		<g:if test='${flash.message}'>
 			<div class='login_message'>${flash.message}</div>

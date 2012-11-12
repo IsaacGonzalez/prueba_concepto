@@ -7,5 +7,6 @@ class CoordinadorCarrera extends Docente{
 	}
 
     static constraints = {
+    	password password:true
     }
 }

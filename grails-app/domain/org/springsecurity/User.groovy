@@ -17,7 +17,9 @@ class User {
 	}
 
 	static mapping = {
-		password column: '`password`'
+		password column: '`password`'		
+        tablePerHierarchy false // este es para que genere una tabla por cada clase que la extienda
+    
 	}
 
 	Set<Role> getAuthorities() {
