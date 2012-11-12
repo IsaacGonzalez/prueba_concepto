@@ -7,23 +7,23 @@
 		<g:message code="coordinadorArea.numeroEmpleado.label" default="Numero Empleado" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field name="numeroEmpleado" type="number" value="${coordinadorAreaInstance.numeroEmpleado}" required=""/>
+	<g:field name="numeroEmpleado" type="number" min="1" value="${coordinadorAreaInstance.numeroEmpleado}" required=""/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: coordinadorAreaInstance, field: 'nombre', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: coordinadorAreaInstance, field: 'nombre', 'error')} required">
 	<label for="nombre">
 		<g:message code="coordinadorArea.nombre.label" default="Nombre" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="nombre" value="${coordinadorAreaInstance?.nombre}"/>
+	<g:textField name="nombre" pattern="${coordinadorAreaInstance.constraints.nombre.matches}" required="" value="${coordinadorAreaInstance?.nombre}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: coordinadorAreaInstance, field: 'apellidos', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: coordinadorAreaInstance, field: 'apellidos', 'error')} required">
 	<label for="apellidos">
 		<g:message code="coordinadorArea.apellidos.label" default="Apellidos" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="apellidos" value="${coordinadorAreaInstance?.apellidos}"/>
+	<g:textField name="apellidos" pattern="${coordinadorAreaInstance.constraints.apellidos.matches}" required="" value="${coordinadorAreaInstance?.apellidos}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: coordinadorAreaInstance, field: 'supervisor', 'error')} ">
@@ -34,12 +34,12 @@
 	<g:select id="supervisor" name="supervisor.id" from="${org.trapo.Usuario.list()}" optionKey="id" value="${coordinadorAreaInstance?.supervisor?.id}" class="many-to-one" noSelection="['null': '']"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: coordinadorAreaInstance, field: 'contrasena', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: coordinadorAreaInstance, field: 'contrasena', 'error')} required">
 	<label for="contrasena">
 		<g:message code="coordinadorArea.contrasena.label" default="Contrasena" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:field type="password" name="contrasena" value="${coordinadorAreaInstance?.contrasena}"/>
+	<g:field type="password" name="contrasena" required="" value="${coordinadorAreaInstance?.contrasena}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: coordinadorAreaInstance, field: 'listaUnidadesAprendizaje', 'error')} ">

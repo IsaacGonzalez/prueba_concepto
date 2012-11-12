@@ -2,6 +2,7 @@ import org.trapo.Docente
 import org.trapo.CoordinadorCarrera
 import org.trapo.Administrativo
 import org.trapo.PlanEducativo
+import org.trapo.UnidadAprendizaje
 
 class BootStrap {
 
@@ -56,7 +57,16 @@ class BootStrap {
 
         planNuevo.save()
 
+        def matematicas = new UnidadAprendizaje(
+            clave: 1120,
+            nombre: "matematicas",
+            planEducativo:planNuevo)
+
+        matematicas.save()
+
     }
+
+    
 
     def destroy = {
     }

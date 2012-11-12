@@ -3,7 +3,7 @@ package org.trapo
 // es la materia
 class UnidadAprendizaje {
 
-	int clave
+	int clave=1
 	String nombre
 	PlanEducativo planEducativo	
 
@@ -14,6 +14,6 @@ class UnidadAprendizaje {
     }
 
     String toString(){
-    	this.clave + " " + this.nombre
+    	this.nombre
     }
 }

@@ -2,20 +2,20 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: planEducativoInstance, field: 'nombre', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: planEducativoInstance, field: 'nombre', 'error')} required">
 	<label for="nombre">
 		<g:message code="planEducativo.nombre.label" default="Nombre" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="nombre" value="${planEducativoInstance?.nombre}"/>
+	<g:textField name="nombre" pattern="${planEducativoInstance.constraints.nombre.matches}" required="" value="${planEducativoInstance?.nombre}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: planEducativoInstance, field: 'planEstudios', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: planEducativoInstance, field: 'planEstudios', 'error')} required">
 	<label for="planEstudios">
 		<g:message code="planEducativo.planEstudios.label" default="Plan Estudios" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="planEstudios" value="${planEducativoInstance?.planEstudios}"/>
+	<g:textField name="planEstudios" pattern="${planEducativoInstance.constraints.planEstudios.matches}" required="" value="${planEducativoInstance?.planEstudios}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: planEducativoInstance, field: 'coordinador', 'error')} required">
@@ -39,6 +39,15 @@
 		<g:message code="planEducativo.listaUnidadesAprendizaje.label" default="Lista Unidades Aprendizaje" />
 		
 	</label>
-	<g:select name="listaUnidadesAprendizaje" from="${org.trapo.UnidadAprendizaje.list()}" multiple="multiple" optionKey="id" size="5" value="${planEducativoInstance?.listaUnidadesAprendizaje*.id}" class="many-to-many"/>
+	
+<ul class="one-to-many">
+<g:each in="${planEducativoInstance?.listaUnidadesAprendizaje?}" var="l">
+    <li><g:link controller="unidadAprendizaje" action="show" id="${l.id}">${l?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="unidadAprendizaje" action="create" params="['planEducativo.id': planEducativoInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'unidadAprendizaje.label', default: 'UnidadAprendizaje')])}</g:link>
+</li>
+</ul>
+
 </div>
 
