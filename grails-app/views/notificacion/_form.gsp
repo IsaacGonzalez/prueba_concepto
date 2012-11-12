@@ -2,20 +2,20 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: notificacionInstance, field: 'nombre', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: notificacionInstance, field: 'nombre', 'error')} required">
 	<label for="nombre">
 		<g:message code="notificacion.nombre.label" default="Nombre" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="nombre" value="${notificacionInstance?.nombre}"/>
+	<g:textField name="nombre" pattern="${notificacionInstance.constraints.nombre.matches}" required="" value="${notificacionInstance?.nombre}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: notificacionInstance, field: 'descripcion', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: notificacionInstance, field: 'descripcion', 'error')} required">
 	<label for="descripcion">
 		<g:message code="notificacion.descripcion.label" default="Descripcion" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="descripcion" value="${notificacionInstance?.descripcion}"/>
+	<g:textField name="descripcion" pattern="${notificacionInstance.constraints.descripcion.matches}" required="" value="${notificacionInstance?.descripcion}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: notificacionInstance, field: 'planificador', 'error')} required">

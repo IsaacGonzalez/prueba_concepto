@@ -23,6 +23,7 @@
 			</g:if>
 			<ol class="property-list coordinadorArea">
 			
+<<<<<<< HEAD
 				<g:if test="${coordinadorAreaInstance?.username}">
 				<li class="fieldcontain">
 					<span id="username-label" class="property-label"><g:message code="coordinadorArea.username.label" default="Username" /></span>
@@ -41,6 +42,8 @@
 				</li>
 				</g:if>
 			
+=======
+>>>>>>> origin/master
 				<g:if test="${coordinadorAreaInstance?.numeroEmpleado}">
 				<li class="fieldcontain">
 					<span id="numeroEmpleado-label" class="property-label"><g:message code="coordinadorArea.numeroEmpleado.label" default="Numero Empleado" /></span>
@@ -77,6 +80,7 @@
 				</li>
 				</g:if>
 			
+<<<<<<< HEAD
 				<g:if test="${coordinadorAreaInstance?.listaUnidadesAprendizaje}">
 				<li class="fieldcontain">
 					<span id="listaUnidadesAprendizaje-label" class="property-label"><g:message code="coordinadorArea.listaUnidadesAprendizaje.label" default="Lista Unidades Aprendizaje" /></span>
@@ -111,15 +115,32 @@
 					<span id="enabled-label" class="property-label"><g:message code="coordinadorArea.enabled.label" default="Enabled" /></span>
 					
 						<span class="property-value" aria-labelledby="enabled-label"><g:formatBoolean boolean="${coordinadorAreaInstance?.enabled}" /></span>
+=======
+				<g:if test="${coordinadorAreaInstance?.contrasena}">
+				<li class="fieldcontain">
+					<span id="contrasena-label" class="property-label"><g:message code="coordinadorArea.contrasena.label" default="Contrasena" /></span>
+					
+						<span class="property-value" aria-labelledby="contrasena-label"><g:fieldValue bean="${coordinadorAreaInstance}" field="contrasena"/></span>
+>>>>>>> origin/master
 					
 				</li>
 				</g:if>
 			
+<<<<<<< HEAD
 				<g:if test="${coordinadorAreaInstance?.passwordExpired}">
 				<li class="fieldcontain">
 					<span id="passwordExpired-label" class="property-label"><g:message code="coordinadorArea.passwordExpired.label" default="Password Expired" /></span>
 					
 						<span class="property-value" aria-labelledby="passwordExpired-label"><g:formatBoolean boolean="${coordinadorAreaInstance?.passwordExpired}" /></span>
+=======
+				<g:if test="${coordinadorAreaInstance?.listaUnidadesAprendizaje}">
+				<li class="fieldcontain">
+					<span id="listaUnidadesAprendizaje-label" class="property-label"><g:message code="coordinadorArea.listaUnidadesAprendizaje.label" default="Lista Unidades Aprendizaje" /></span>
+					
+						<g:each in="${coordinadorAreaInstance.listaUnidadesAprendizaje}" var="l">
+						<span class="property-value" aria-labelledby="listaUnidadesAprendizaje-label"><g:link controller="unidadAprendizaje" action="show" id="${l.id}">${l?.encodeAsHTML()}</g:link></span>
+						</g:each>
+>>>>>>> origin/master
 					
 				</li>
 				</g:if>

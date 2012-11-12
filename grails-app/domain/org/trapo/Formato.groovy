@@ -12,7 +12,7 @@ class Formato {
     	autorizador nullable: false
         // tiene bugs todavia
         fechaCreacion nullable: false, validator: {
-            it >= new Date()
+            it >= new Date()-1
         }
     	estaCompleto nullable: false
     	estadoAvance nullable: false, inlist : [0,1]

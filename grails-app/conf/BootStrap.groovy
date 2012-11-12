@@ -3,6 +3,7 @@ import org.trapo.Docente
 import org.trapo.CoordinadorCarrera
 import org.trapo.Administrativo
 import org.trapo.PlanEducativo
+import org.trapo.UnidadAprendizaje
 
 import org.springsecurity.Role
 import org.springsecurity.UserRole
@@ -81,12 +82,24 @@ class BootStrap {
             }
         }
 
+<<<<<<< HEAD
         if (!ruelas.authorities.contains(rolDirector)) {
                 UserRole.create ruelas, rolDirector
             }
             
         
+=======
+        def matematicas = new UnidadAprendizaje(
+            clave: 1120,
+            nombre: "matematicas",
+            planEducativo:planNuevo)
+
+        matematicas.save()
+
+>>>>>>> origin/master
     }
+
+    
 
     def destroy = {
     }

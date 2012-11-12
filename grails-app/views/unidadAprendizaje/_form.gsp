@@ -7,7 +7,7 @@
 		<g:message code="unidadAprendizaje.clave.label" default="Clave" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field name="clave" type="number" value="${unidadAprendizajeInstance.clave}" required=""/>
+	<g:field name="clave" type="number" min="1" value="${unidadAprendizajeInstance.clave}" required=""/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: unidadAprendizajeInstance, field: 'nombre', 'error')} required">
@@ -15,7 +15,7 @@
 		<g:message code="unidadAprendizaje.nombre.label" default="Nombre" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="nombre" required="" value="${unidadAprendizajeInstance?.nombre}"/>
+	<g:textField name="nombre" pattern="${unidadAprendizajeInstance.constraints.nombre.matches}" required="" value="${unidadAprendizajeInstance?.nombre}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: unidadAprendizajeInstance, field: 'planEducativo', 'error')} required">

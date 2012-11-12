@@ -23,6 +23,7 @@
 			</g:if>
 			<ol class="property-list usuario">
 			
+<<<<<<< HEAD
 				<g:if test="${usuarioInstance?.username}">
 				<li class="fieldcontain">
 					<span id="username-label" class="property-label"><g:message code="usuario.username.label" default="Username" /></span>
@@ -41,6 +42,8 @@
 				</li>
 				</g:if> --}%
 			
+=======
+>>>>>>> origin/master
 				<g:if test="${usuarioInstance?.numeroEmpleado}">
 				<li class="fieldcontain">
 					<span id="numeroEmpleado-label" class="property-label"><g:message code="usuario.numeroEmpleado.label" default="Numero Empleado" /></span>
@@ -77,6 +80,7 @@
 				</li>
 				</g:if>
 			
+<<<<<<< HEAD
 				<g:if test="${usuarioInstance?.accountExpired}">
 				<li class="fieldcontain">
 					<span id="accountExpired-label" class="property-label"><g:message code="usuario.accountExpired.label" default="Account Expired" /></span>
@@ -109,6 +113,13 @@
 					<span id="passwordExpired-label" class="property-label"><g:message code="usuario.passwordExpired.label" default="Password Expired" /></span>
 					
 						<span class="property-value" aria-labelledby="passwordExpired-label"><g:formatBoolean boolean="${usuarioInstance?.passwordExpired}" /></span>
+=======
+				<g:if test="${usuarioInstance?.contrasena}">
+				<li class="fieldcontain">
+					<span id="contrasena-label" class="property-label"><g:message code="usuario.contrasena.label" default="Contrasena" /></span>
+					
+						<span class="property-value" aria-labelledby="contrasena-label"><g:fieldValue bean="${usuarioInstance}" field="contrasena"/></span>
+>>>>>>> origin/master
 					
 				</li>
 				</g:if>

@@ -23,6 +23,7 @@
 			</g:if>
 			<ol class="property-list administrativo">
 			
+<<<<<<< HEAD
 				<g:if test="${administrativoInstance?.username}">
 				<li class="fieldcontain">
 					<span id="username-label" class="property-label"><g:message code="administrativo.username.label" default="Username" /></span>
@@ -41,6 +42,8 @@
 				</li>
 				</g:if>
 			
+=======
+>>>>>>> origin/master
 				<g:if test="${administrativoInstance?.numeroEmpleado}">
 				<li class="fieldcontain">
 					<span id="numeroEmpleado-label" class="property-label"><g:message code="administrativo.numeroEmpleado.label" default="Numero Empleado" /></span>
@@ -77,6 +80,7 @@
 				</li>
 				</g:if>
 			
+<<<<<<< HEAD
 				<g:if test="${administrativoInstance?.puesto}">
 				<li class="fieldcontain">
 					<span id="puesto-label" class="property-label"><g:message code="administrativo.puesto.label" default="Puesto" /></span>
@@ -100,10 +104,18 @@
 					<span id="accountLocked-label" class="property-label"><g:message code="administrativo.accountLocked.label" default="Account Locked" /></span>
 					
 						<span class="property-value" aria-labelledby="accountLocked-label"><g:formatBoolean boolean="${administrativoInstance?.accountLocked}" /></span>
+=======
+				<g:if test="${administrativoInstance?.contrasena}">
+				<li class="fieldcontain">
+					<span id="contrasena-label" class="property-label"><g:message code="administrativo.contrasena.label" default="Contrasena" /></span>
+					
+						<span class="property-value" aria-labelledby="contrasena-label"><g:fieldValue bean="${administrativoInstance}" field="contrasena"/></span>
+>>>>>>> origin/master
 					
 				</li>
 				</g:if>
 			
+<<<<<<< HEAD
 				<g:if test="${administrativoInstance?.enabled}">
 				<li class="fieldcontain">
 					<span id="enabled-label" class="property-label"><g:message code="administrativo.enabled.label" default="Enabled" /></span>
@@ -118,6 +130,13 @@
 					<span id="passwordExpired-label" class="property-label"><g:message code="administrativo.passwordExpired.label" default="Password Expired" /></span>
 					
 						<span class="property-value" aria-labelledby="passwordExpired-label"><g:formatBoolean boolean="${administrativoInstance?.passwordExpired}" /></span>
+=======
+				<g:if test="${administrativoInstance?.puesto}">
+				<li class="fieldcontain">
+					<span id="puesto-label" class="property-label"><g:message code="administrativo.puesto.label" default="Puesto" /></span>
+					
+						<span class="property-value" aria-labelledby="puesto-label"><g:fieldValue bean="${administrativoInstance}" field="puesto"/></span>
+>>>>>>> origin/master
 					
 				</li>
 				</g:if>

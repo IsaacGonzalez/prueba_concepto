@@ -24,10 +24,13 @@
 				<thead>
 					<tr>
 					
+<<<<<<< HEAD
 						<g:sortableColumn property="username" title="${message(code: 'administrativo.username.label', default: 'Username')}" />
 					
 						<g:sortableColumn property="password" title="${message(code: 'administrativo.password.label', default: 'Password')}" />
 					
+=======
+>>>>>>> origin/master
 						<g:sortableColumn property="numeroEmpleado" title="${message(code: 'administrativo.numeroEmpleado.label', default: 'Numero Empleado')}" />
 					
 						<g:sortableColumn property="nombre" title="${message(code: 'administrativo.nombre.label', default: 'Nombre')}" />
@@ -36,17 +39,28 @@
 					
 						<th><g:message code="administrativo.supervisor.label" default="Supervisor" /></th>
 					
+<<<<<<< HEAD
+=======
+						<g:sortableColumn property="contrasena" title="${message(code: 'administrativo.contrasena.label', default: 'Contrasena')}" />
+					
+						<g:sortableColumn property="puesto" title="${message(code: 'administrativo.puesto.label', default: 'Puesto')}" />
+					
+>>>>>>> origin/master
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${administrativoInstanceList}" status="i" var="administrativoInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
+<<<<<<< HEAD
 						<td><g:link action="show" id="${administrativoInstance.id}">${fieldValue(bean: administrativoInstance, field: "username")}</g:link></td>
 					
 						<td>${fieldValue(bean: administrativoInstance, field: "password")}</td>
 					
 						<td>${fieldValue(bean: administrativoInstance, field: "numeroEmpleado")}</td>
+=======
+						<td><g:link action="show" id="${administrativoInstance.id}">${fieldValue(bean: administrativoInstance, field: "numeroEmpleado")}</g:link></td>
+>>>>>>> origin/master
 					
 						<td>${fieldValue(bean: administrativoInstance, field: "nombre")}</td>
 					
@@ -54,6 +68,13 @@
 					
 						<td>${fieldValue(bean: administrativoInstance, field: "supervisor")}</td>
 					
+<<<<<<< HEAD
+=======
+						<td>${fieldValue(bean: administrativoInstance, field: "contrasena")}</td>
+					
+						<td>${fieldValue(bean: administrativoInstance, field: "puesto")}</td>
+					
+>>>>>>> origin/master
 					</tr>
 				</g:each>
 				</tbody>

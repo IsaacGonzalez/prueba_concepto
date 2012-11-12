@@ -2,6 +2,7 @@
 
 
 
+<<<<<<< HEAD
 <div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'username', 'error')} required">
 	<label for="username">
 		<g:message code="usuario.username.label" default="Username" />
@@ -18,6 +19,8 @@
 	<g:textField name="password" required="" value="${usuarioInstance?.password}"/>
 </div>
 
+=======
+>>>>>>> origin/master
 <div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'numeroEmpleado', 'error')} required">
 	<label for="numeroEmpleado">
 		<g:message code="usuario.numeroEmpleado.label" default="Numero Empleado" />
@@ -50,6 +53,7 @@
 	<g:select id="supervisor" name="supervisor.id" from="${org.trapo.Usuario.list()}" optionKey="id" value="${usuarioInstance?.supervisor?.id}" class="many-to-one" noSelection="['null': '']"/>
 </div>
 
+<<<<<<< HEAD
 <div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'accountExpired', 'error')} ">
 	<label for="accountExpired">
 		<g:message code="usuario.accountExpired.label" default="Account Expired" />
@@ -80,5 +84,13 @@
 		
 	</label>
 	<g:checkBox name="passwordExpired" value="${usuarioInstance?.passwordExpired}" />
+=======
+<div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'contrasena', 'error')} required">
+	<label for="contrasena">
+		<g:message code="usuario.contrasena.label" default="Contrasena" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field type="password" name="contrasena" required="" value="${usuarioInstance?.contrasena}"/>
+>>>>>>> origin/master
 </div>
 
