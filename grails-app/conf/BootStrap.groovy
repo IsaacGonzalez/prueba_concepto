@@ -71,7 +71,6 @@ class BootStrap {
         // creamos los roles para nuestra aplicacion
         def userRole = new Role (authority: "ROLE_USER").save()
         def adminRole = new Role (authority: "ROLE_ADMIN").save()        
-        def rolDirector = new Role (authority: "ROLE_DIRECTOR").save()        
 
         def usuarios = [leopoldo, ruelas, aglay]
 
@@ -82,25 +81,15 @@ class BootStrap {
             }
         }
 
-<<<<<<< HEAD
-        if (!ruelas.authorities.contains(rolDirector)) {
-                UserRole.create ruelas, rolDirector
-            }
-            
-        
-=======
-        def matematicas = new UnidadAprendizaje(
-            clave: 1120,
-            nombre: "matematicas",
-            planEducativo:planNuevo)
+        // def matematicas = new UnidadAprendizaje(
+        //     clave: 1120,
+        //     nombre: "matematicas",
+        //     planEducativo:planNuevo)
 
-        matematicas.save()
-
->>>>>>> origin/master
-    }
-
-    
+        // matematicas.save()   
 
     def destroy = {
     }
+
+    }   
 }
