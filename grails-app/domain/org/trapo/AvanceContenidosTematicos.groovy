@@ -9,13 +9,12 @@ class AvanceContenidosTematicos extends Reporte{
 	//int clave=1
 	int grupo = 1
 	String cicloEscolar
-	int avanceGlobal=1
+	int avanceGlobal = 1
 	//ArrayList <AvanceDeTema> tablaAvanceDeTema = new ArrayList<AvanceDeTema>()
 	//Date fecha
 
-//	static hasOne = [maestro:Docente]
-
-	//static hasONe = [materia:UnidadAprendizaje]
+	//static hasOne = [maestro:Docente]
+	//static hasOne = [materia:UnidadAprendizaje]
 
 	static hasMany = [avanceDeTema:AvanceDeTema] 
 

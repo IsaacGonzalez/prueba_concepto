@@ -26,7 +26,7 @@ class BootStrap {
             )
 
         usuario.save()
-        numeroEmpleado++        
+        numeroEmpleado++
 
         def aglay = new CoordinadorCarrera (
                 username    : "aglay",
