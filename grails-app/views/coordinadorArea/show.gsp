@@ -23,6 +23,24 @@
 			</g:if>
 			<ol class="property-list coordinadorArea">
 			
+				<g:if test="${coordinadorAreaInstance?.username}">
+				<li class="fieldcontain">
+					<span id="username-label" class="property-label"><g:message code="coordinadorArea.username.label" default="Username" /></span>
+					
+						<span class="property-value" aria-labelledby="username-label"><g:fieldValue bean="${coordinadorAreaInstance}" field="username"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${coordinadorAreaInstance?.password}">
+				<li class="fieldcontain">
+					<span id="password-label" class="property-label"><g:message code="coordinadorArea.password.label" default="Password" /></span>
+					
+						<span class="property-value" aria-labelledby="password-label"><g:fieldValue bean="${coordinadorAreaInstance}" field="password"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${coordinadorAreaInstance?.numeroEmpleado}">
 				<li class="fieldcontain">
 					<span id="numeroEmpleado-label" class="property-label"><g:message code="coordinadorArea.numeroEmpleado.label" default="Numero Empleado" /></span>
@@ -59,11 +77,29 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${coordinadorAreaInstance?.contrasena}">
+				<g:if test="${coordinadorAreaInstance?.accountExpired}">
 				<li class="fieldcontain">
-					<span id="contrasena-label" class="property-label"><g:message code="coordinadorArea.contrasena.label" default="Contrasena" /></span>
+					<span id="accountExpired-label" class="property-label"><g:message code="coordinadorArea.accountExpired.label" default="Account Expired" /></span>
 					
-						<span class="property-value" aria-labelledby="contrasena-label"><g:fieldValue bean="${coordinadorAreaInstance}" field="contrasena"/></span>
+						<span class="property-value" aria-labelledby="accountExpired-label"><g:formatBoolean boolean="${coordinadorAreaInstance?.accountExpired}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${coordinadorAreaInstance?.accountLocked}">
+				<li class="fieldcontain">
+					<span id="accountLocked-label" class="property-label"><g:message code="coordinadorArea.accountLocked.label" default="Account Locked" /></span>
+					
+						<span class="property-value" aria-labelledby="accountLocked-label"><g:formatBoolean boolean="${coordinadorAreaInstance?.accountLocked}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${coordinadorAreaInstance?.enabled}">
+				<li class="fieldcontain">
+					<span id="enabled-label" class="property-label"><g:message code="coordinadorArea.enabled.label" default="Enabled" /></span>
+					
+						<span class="property-value" aria-labelledby="enabled-label"><g:formatBoolean boolean="${coordinadorAreaInstance?.enabled}" /></span>
 					
 				</li>
 				</g:if>
@@ -75,6 +111,15 @@
 						<g:each in="${coordinadorAreaInstance.listaUnidadesAprendizaje}" var="l">
 						<span class="property-value" aria-labelledby="listaUnidadesAprendizaje-label"><g:link controller="unidadAprendizaje" action="show" id="${l.id}">${l?.encodeAsHTML()}</g:link></span>
 						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${coordinadorAreaInstance?.passwordExpired}">
+				<li class="fieldcontain">
+					<span id="passwordExpired-label" class="property-label"><g:message code="coordinadorArea.passwordExpired.label" default="Password Expired" /></span>
+					
+						<span class="property-value" aria-labelledby="passwordExpired-label"><g:formatBoolean boolean="${coordinadorAreaInstance?.passwordExpired}" /></span>
 					
 				</li>
 				</g:if>

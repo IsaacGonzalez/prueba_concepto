@@ -2,6 +2,22 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: coordinadorCarreraInstance, field: 'username', 'error')} required">
+	<label for="username">
+		<g:message code="coordinadorCarrera.username.label" default="Username" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="username" required="" value="${coordinadorCarreraInstance?.username}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: coordinadorCarreraInstance, field: 'password', 'error')} required">
+	<label for="password">
+		<g:message code="coordinadorCarrera.password.label" default="Password" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field type="password" name="password" required="" value="${coordinadorCarreraInstance?.password}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: coordinadorCarreraInstance, field: 'numeroEmpleado', 'error')} required">
 	<label for="numeroEmpleado">
 		<g:message code="coordinadorCarrera.numeroEmpleado.label" default="Numero Empleado" />
@@ -34,12 +50,28 @@
 	<g:select id="supervisor" name="supervisor.id" from="${org.trapo.Usuario.list()}" optionKey="id" value="${coordinadorCarreraInstance?.supervisor?.id}" class="many-to-one" noSelection="['null': '']"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: coordinadorCarreraInstance, field: 'contrasena', 'error')} required">
-	<label for="contrasena">
-		<g:message code="coordinadorCarrera.contrasena.label" default="Contrasena" />
-		<span class="required-indicator">*</span>
+<div class="fieldcontain ${hasErrors(bean: coordinadorCarreraInstance, field: 'accountExpired', 'error')} ">
+	<label for="accountExpired">
+		<g:message code="coordinadorCarrera.accountExpired.label" default="Account Expired" />
+		
 	</label>
-	<g:field type="password" name="contrasena" required="" value="${coordinadorCarreraInstance?.contrasena}"/>
+	<g:checkBox name="accountExpired" value="${coordinadorCarreraInstance?.accountExpired}" />
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: coordinadorCarreraInstance, field: 'accountLocked', 'error')} ">
+	<label for="accountLocked">
+		<g:message code="coordinadorCarrera.accountLocked.label" default="Account Locked" />
+		
+	</label>
+	<g:checkBox name="accountLocked" value="${coordinadorCarreraInstance?.accountLocked}" />
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: coordinadorCarreraInstance, field: 'enabled', 'error')} ">
+	<label for="enabled">
+		<g:message code="coordinadorCarrera.enabled.label" default="Enabled" />
+		
+	</label>
+	<g:checkBox name="enabled" value="${coordinadorCarreraInstance?.enabled}" />
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: coordinadorCarreraInstance, field: 'listaUnidadesAprendizaje', 'error')} ">
@@ -48,5 +80,13 @@
 		
 	</label>
 	<g:select name="listaUnidadesAprendizaje" from="${org.trapo.UnidadAprendizaje.list()}" multiple="multiple" optionKey="id" size="5" value="${coordinadorCarreraInstance?.listaUnidadesAprendizaje*.id}" class="many-to-many"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: coordinadorCarreraInstance, field: 'passwordExpired', 'error')} ">
+	<label for="passwordExpired">
+		<g:message code="coordinadorCarrera.passwordExpired.label" default="Password Expired" />
+		
+	</label>
+	<g:checkBox name="passwordExpired" value="${coordinadorCarreraInstance?.passwordExpired}" />
 </div>
 
