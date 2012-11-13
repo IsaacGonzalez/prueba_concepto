@@ -7,6 +7,8 @@ class Docente extends Usuario {
 	static hasMany = [listaUnidadesAprendizaje: UnidadAprendizaje]
 
     static constraints = {
+    	password password:true
+    	listaUnidadesAprendizaje nullable: true
     }
 
     String toString(){

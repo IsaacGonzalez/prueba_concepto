@@ -1,22 +1,22 @@
 package org.trapo
 
-class Usuario {
+import org.springsecurity.User
+
+class Usuario extends User{
 
 	int numeroEmpleado
 	Usuario supervisor
 	String nombre
 	String apellidos
-	String contrasena
-	// Array de formatos ???
+    boolean enabled = true    
+	// static hasMany = [formatos: Formato] ???
 
 
     static constraints = {
-    	numeroEmpleado unique: true, nullable: false,min:1
+    	numeroEmpleado unique: true, nullable: false, min:1
     	nombre nullable: false, blank:false, matches: "[a-zA-ZÑñá-úÁ-Ú ]+"
     	apellidos nullable: false, blank:false, matches: "[a-zA-ZÑñá-úÁ-Ú ]+"
-    	supervisor nullable: true
-        // modificar el view
-    	contrasena password: true, blank:false // falta AES
+    	supervisor nullable: true    	
     }
 
     String toString(){

@@ -24,6 +24,13 @@
 				<thead>
 					<tr>
 					
+<<<<<<< HEAD
+						<g:sortableColumn property="username" title="${message(code: 'coordinadorCarrera.username.label', default: 'Username')}" />
+					
+						<g:sortableColumn property="password" title="${message(code: 'coordinadorCarrera.password.label', default: 'Password')}" />
+					
+=======
+>>>>>>> origin/master
 						<g:sortableColumn property="numeroEmpleado" title="${message(code: 'coordinadorCarrera.numeroEmpleado.label', default: 'Numero Empleado')}" />
 					
 						<g:sortableColumn property="nombre" title="${message(code: 'coordinadorCarrera.nombre.label', default: 'Nombre')}" />
@@ -32,15 +39,26 @@
 					
 						<th><g:message code="coordinadorCarrera.supervisor.label" default="Supervisor" /></th>
 					
+<<<<<<< HEAD
+=======
 						<g:sortableColumn property="contrasena" title="${message(code: 'coordinadorCarrera.contrasena.label', default: 'Contrasena')}" />
 					
+>>>>>>> origin/master
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${coordinadorCarreraInstanceList}" status="i" var="coordinadorCarreraInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
+<<<<<<< HEAD
+						<td><g:link action="show" id="${coordinadorCarreraInstance.id}">${fieldValue(bean: coordinadorCarreraInstance, field: "username")}</g:link></td>
+					
+						<td>${fieldValue(bean: coordinadorCarreraInstance, field: "password")}</td>
+					
+						<td>${fieldValue(bean: coordinadorCarreraInstance, field: "numeroEmpleado")}</td>
+=======
 						<td><g:link action="show" id="${coordinadorCarreraInstance.id}">${fieldValue(bean: coordinadorCarreraInstance, field: "numeroEmpleado")}</g:link></td>
+>>>>>>> origin/master
 					
 						<td>${fieldValue(bean: coordinadorCarreraInstance, field: "nombre")}</td>
 					
@@ -48,8 +66,11 @@
 					
 						<td>${fieldValue(bean: coordinadorCarreraInstance, field: "supervisor")}</td>
 					
+<<<<<<< HEAD
+=======
 						<td>${fieldValue(bean: coordinadorCarreraInstance, field: "contrasena")}</td>
 					
+>>>>>>> origin/master
 					</tr>
 				</g:each>
 				</tbody>

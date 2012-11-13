@@ -24,6 +24,13 @@
 				<thead>
 					<tr>
 					
+<<<<<<< HEAD
+						<g:sortableColumn property="username" title="${message(code: 'coordinadorArea.username.label', default: 'Username')}" />
+					
+						<g:sortableColumn property="password" title="${message(code: 'coordinadorArea.password.label', default: 'Password')}" />
+					
+=======
+>>>>>>> origin/master
 						<g:sortableColumn property="numeroEmpleado" title="${message(code: 'coordinadorArea.numeroEmpleado.label', default: 'Numero Empleado')}" />
 					
 						<g:sortableColumn property="nombre" title="${message(code: 'coordinadorArea.nombre.label', default: 'Nombre')}" />
@@ -32,15 +39,26 @@
 					
 						<th><g:message code="coordinadorArea.supervisor.label" default="Supervisor" /></th>
 					
+<<<<<<< HEAD
+=======
 						<g:sortableColumn property="contrasena" title="${message(code: 'coordinadorArea.contrasena.label', default: 'Contrasena')}" />
 					
+>>>>>>> origin/master
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${coordinadorAreaInstanceList}" status="i" var="coordinadorAreaInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
+<<<<<<< HEAD
+						<td><g:link action="show" id="${coordinadorAreaInstance.id}">${fieldValue(bean: coordinadorAreaInstance, field: "username")}</g:link></td>
+					
+						<td>${fieldValue(bean: coordinadorAreaInstance, field: "password")}</td>
+					
+						<td>${fieldValue(bean: coordinadorAreaInstance, field: "numeroEmpleado")}</td>
+=======
 						<td><g:link action="show" id="${coordinadorAreaInstance.id}">${fieldValue(bean: coordinadorAreaInstance, field: "numeroEmpleado")}</g:link></td>
+>>>>>>> origin/master
 					
 						<td>${fieldValue(bean: coordinadorAreaInstance, field: "nombre")}</td>
 					
@@ -48,8 +66,11 @@
 					
 						<td>${fieldValue(bean: coordinadorAreaInstance, field: "supervisor")}</td>
 					
+<<<<<<< HEAD
+=======
 						<td>${fieldValue(bean: coordinadorAreaInstance, field: "contrasena")}</td>
 					
+>>>>>>> origin/master
 					</tr>
 				</g:each>
 				</tbody>

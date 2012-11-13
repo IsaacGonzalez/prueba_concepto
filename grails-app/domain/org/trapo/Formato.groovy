@@ -7,6 +7,8 @@ class Formato {
 	boolean estaCompleto
 	int estadoAvance // 0 o 1 por lo pronto
 
+    static hasMany = [archivos: Archivo, otros: Otro, ]
+
     static constraints = {
     	solicitante nullable: false
     	autorizador nullable: false
@@ -17,4 +19,5 @@ class Formato {
     	estaCompleto nullable: false
     	estadoAvance nullable: false, inlist : [0,1]
     }
+   
 }
