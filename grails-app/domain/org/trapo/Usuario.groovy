@@ -8,6 +8,7 @@ class Usuario extends User{
 	Usuario supervisor
 	String nombre
 	String apellidos	
+    boolean enabled = true
 	// Array de formatos ???
 
 
