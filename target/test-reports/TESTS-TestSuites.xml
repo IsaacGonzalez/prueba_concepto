@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="0" name="ActividadesPtcPmtTests" package="org.trapo" tests="1" time="1.426" timestamp="2012-11-16T02:15:20">
+      <properties />
+
+      <testcase classname="org.trapo.ActividadesPtcPmtTests" name="testSomething" time="0.825" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Joss-HP" id="1" name="AdministrativoControllerTests" package="org.trapo" tests="8" time="3.776" timestamp="2012-11-16T02:15:21">
+      <properties />
+
+      <testcase classname="org.trapo.AdministrativoControllerTests" name="testCreate" time="1.986" />
+
+      <testcase classname="org.trapo.AdministrativoControllerTests" name="testEdit" time="1.03" />
+
+      <testcase classname="org.trapo.AdministrativoControllerTests" name="testList" time="0.1" />
+
+      <testcase classname="org.trapo.AdministrativoControllerTests" name="testUpdate" time="0.19">
+          <failure message="Assertion failed: &#xa;&#xa;assert view == &quot;/administrativo/edit&quot;&#xa;       |    |&#xa;       null false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert view == &quot;/administrativo/edit&quot;
+       |    |
+       null false
+
+	at org.trapo.AdministrativoControllerTests.testUpdate(AdministrativoControllerTests.groovy:114)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.AdministrativoControllerTests" name="testIndex" time="0.06" />
+
+      <testcase classname="org.trapo.AdministrativoControllerTests" name="testDelete" time="0.08" />
+
+      <testcase classname="org.trapo.AdministrativoControllerTests" name="testSave" time="0.12" />
+
+      <testcase classname="org.trapo.AdministrativoControllerTests" name="testShow" time="0.06" />
+
+      <system-out><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="2" name="AdministrativoTests" package="org.trapo" tests="1" time="0.282" timestamp="2012-11-16T02:15:25">
+      <properties />
+
+      <testcase classname="org.trapo.AdministrativoTests" name="testSomething" time="0.142" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="3" name="AvanceContenidosTematicosTests" package="org.trapo" tests="1" time="0.382" timestamp="2012-11-16T02:15:26">
+      <properties />
+
+      <testcase classname="org.trapo.AvanceContenidosTematicosTests" name="testSomething" time="0.252" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="4" name="ComisionSalidasAcademicasTests" package="org.trapo" tests="1" time="0.544" timestamp="2012-11-16T02:15:26">
+      <properties />
+
+      <testcase classname="org.trapo.ComisionSalidasAcademicasTests" name="testSomething" time="0.312" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Joss-HP" id="5" name="CoordinadorAreaControllerTests" package="org.trapo" tests="8" time="1.24" timestamp="2012-11-16T02:15:26">
+      <properties />
+
+      <testcase classname="org.trapo.CoordinadorAreaControllerTests" name="testCreate" time="0.58" />
+
+      <testcase classname="org.trapo.CoordinadorAreaControllerTests" name="testEdit" time="0.13" />
+
+      <testcase classname="org.trapo.CoordinadorAreaControllerTests" name="testList" time="0.06" />
+
+      <testcase classname="org.trapo.CoordinadorAreaControllerTests" name="testUpdate" time="0.09">
+          <failure message="Assertion failed: &#xa;&#xa;assert view == &quot;/coordinadorArea/edit&quot;&#xa;       |    |&#xa;       null false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert view == &quot;/coordinadorArea/edit&quot;
+       |    |
+       null false
+
+	at org.trapo.CoordinadorAreaControllerTests.testUpdate(CoordinadorAreaControllerTests.groovy:113)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.CoordinadorAreaControllerTests" name="testIndex" time="0.05" />
+
+      <testcase classname="org.trapo.CoordinadorAreaControllerTests" name="testDelete" time="0.06" />
+
+      <testcase classname="org.trapo.CoordinadorAreaControllerTests" name="testSave" time="0.07" />
+
+      <testcase classname="org.trapo.CoordinadorAreaControllerTests" name="testShow" time="0.07" />
+
+      <system-out><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="6" name="CoordinadorAreaTests" package="org.trapo" tests="1" time="0.512" timestamp="2012-11-16T02:15:28">
+      <properties />
+
+      <testcase classname="org.trapo.CoordinadorAreaTests" name="testSomething" time="0.332" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Joss-HP" id="7" name="CoordinadorCarreraControllerTests" package="org.trapo" tests="8" time="1.154" timestamp="2012-11-16T02:15:28">
+      <properties />
+
+      <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testCreate" time="0.46" />
+
+      <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testEdit" time="0.164" />
+
+      <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testList" time="0.07" />
+
+      <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testUpdate" time="0.07">
+          <failure message="Assertion failed: &#xa;&#xa;assert view == &quot;/coordinadorCarrera/edit&quot;&#xa;       |    |&#xa;       null false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert view == &quot;/coordinadorCarrera/edit&quot;
+       |    |
+       null false
+
+	at org.trapo.CoordinadorCarreraControllerTests.testUpdate(CoordinadorCarreraControllerTests.groovy:113)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testIndex" time="0.05" />
+
+      <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testDelete" time="0.09" />
+
+      <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testSave" time="0.08" />
+
+      <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testShow" time="0.05" />
+
+      <system-out><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="8" name="CoordinadorCarreraTests" package="org.trapo" tests="1" time="0.37" timestamp="2012-11-16T02:15:29">
+      <properties />
+
+      <testcase classname="org.trapo.CoordinadorCarreraTests" name="testSomething" time="0.24" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="9" name="DisponibilidadTests" package="org.trapo" tests="1" time="0.341" timestamp="2012-11-16T02:15:30">
+      <properties />
+
+      <testcase classname="org.trapo.DisponibilidadTests" name="testSomething" time="0.19" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Joss-HP" id="10" name="DocenteControllerTests" package="org.trapo" tests="8" time="1.04" timestamp="2012-11-16T02:15:30">
+      <properties />
+
+      <testcase classname="org.trapo.DocenteControllerTests" name="testCreate" time="0.34" />
+
+      <testcase classname="org.trapo.DocenteControllerTests" name="testEdit" time="0.13" />
+
+      <testcase classname="org.trapo.DocenteControllerTests" name="testList" time="0.07" />
+
+      <testcase classname="org.trapo.DocenteControllerTests" name="testUpdate" time="0.09">
+          <failure message="Assertion failed: &#xa;&#xa;assert view == &quot;/docente/edit&quot;&#xa;       |    |&#xa;       null false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert view == &quot;/docente/edit&quot;
+       |    |
+       null false
+
+	at org.trapo.DocenteControllerTests.testUpdate(DocenteControllerTests.groovy:113)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.DocenteControllerTests" name="testIndex" time="0.09" />
+
+      <testcase classname="org.trapo.DocenteControllerTests" name="testDelete" time="0.06" />
+
+      <testcase classname="org.trapo.DocenteControllerTests" name="testSave" time="0.07" />
+
+      <testcase classname="org.trapo.DocenteControllerTests" name="testShow" time="0.06" />
+
+      <system-out><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="11" name="DocenteTests" package="org.trapo" tests="1" time="0.22" timestamp="2012-11-16T02:15:31">
+      <properties />
+
+      <testcase classname="org.trapo.DocenteTests" name="testSomething" time="0.13" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="12" name="ExamenesOrdExtraordTests" package="org.trapo" tests="1" time="0.28" timestamp="2012-11-16T02:15:31">
+      <properties />
+
+      <testcase classname="org.trapo.ExamenesOrdExtraordTests" name="testSomething" time="0.14" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="5" hostname="Joss-HP" id="13" name="FormatoControllerTests" package="org.trapo" tests="8" time="0.98" timestamp="2012-11-16T02:15:32">
+      <properties />
+
+      <testcase classname="org.trapo.FormatoControllerTests" name="testCreate" time="0.37" />
+
+      <testcase classname="org.trapo.FormatoControllerTests" name="testEdit" time="0.12">
+          <failure message="Assertion failed: &#xa;&#xa;assert formato.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       org.trapo.Formato : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+	at org.trapo.FormatoControllerTests.testEdit(FormatoControllerTests.groovy:86)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.FormatoControllerTests" name="testList" time="0.05" />
+
+      <testcase classname="org.trapo.FormatoControllerTests" name="testUpdate" time="0.06">
+          <failure message="Assertion failed: &#xa;&#xa;assert formato.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       org.trapo.Formato : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+	at org.trapo.FormatoControllerTests.testUpdate(FormatoControllerTests.groovy:106)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.FormatoControllerTests" name="testIndex" time="0.05" />
+
+      <testcase classname="org.trapo.FormatoControllerTests" name="testDelete" time="0.06">
+          <failure message="Assertion failed: &#xa;&#xa;assert formato.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       org.trapo.Formato : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+	at org.trapo.FormatoControllerTests.testDelete(FormatoControllerTests.groovy:150)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.FormatoControllerTests" name="testSave" time="0.06">
+          <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/formato/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@29a876&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/formato/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@29a876
+
+	at org.trapo.FormatoControllerTests.testSave(FormatoControllerTests.groovy:54)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.FormatoControllerTests" name="testShow" time="0.06">
+          <failure message="Assertion failed: &#xa;&#xa;assert formato.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       org.trapo.Formato : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+	at org.trapo.FormatoControllerTests.testShow(FormatoControllerTests.groovy:68)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="14" name="FormatoTests" package="org.trapo" tests="1" time="0.22" timestamp="2012-11-16T02:15:33">
+      <properties />
+
+      <testcase classname="org.trapo.FormatoTests" name="testSomething" time="0.08" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="5" hostname="Joss-HP" id="15" name="NotificacionControllerTests" package="org.trapo" tests="8" time="1.033" timestamp="2012-11-16T02:15:33">
+      <properties />
+
+      <testcase classname="org.trapo.NotificacionControllerTests" name="testCreate" time="0.321" />
+
+      <testcase classname="org.trapo.NotificacionControllerTests" name="testEdit" time="0.14">
+          <failure message="Assertion failed: &#xa;&#xa;assert notificacion.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       org.trapo.Notificacion : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+	at org.trapo.NotificacionControllerTests.testEdit(NotificacionControllerTests.groovy:104)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.NotificacionControllerTests" name="testList" time="0.084" />
+
+      <testcase classname="org.trapo.NotificacionControllerTests" name="testUpdate" time="0.096">
+          <failure message="Assertion failed: &#xa;&#xa;assert notificacion.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       org.trapo.Notificacion : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+	at org.trapo.NotificacionControllerTests.testUpdate(NotificacionControllerTests.groovy:124)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.NotificacionControllerTests" name="testIndex" time="0.064" />
+
+      <testcase classname="org.trapo.NotificacionControllerTests" name="testDelete" time="0.06">
+          <failure message="Assertion failed: &#xa;&#xa;assert notificacion.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       org.trapo.Notificacion : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+	at org.trapo.NotificacionControllerTests.testDelete(NotificacionControllerTests.groovy:168)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.NotificacionControllerTests" name="testSave" time="0.07">
+          <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/notificacion/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@f11f97&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/notificacion/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@f11f97
+
+	at org.trapo.NotificacionControllerTests.testSave(NotificacionControllerTests.groovy:72)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.NotificacionControllerTests" name="testShow" time="0.06">
+          <failure message="Assertion failed: &#xa;&#xa;assert notificacion.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       org.trapo.Notificacion : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+	at org.trapo.NotificacionControllerTests.testShow(NotificacionControllerTests.groovy:86)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="16" name="NotificacionTests" package="org.trapo" tests="1" time="0.25" timestamp="2012-11-16T02:15:34">
+      <properties />
+
+      <testcase classname="org.trapo.NotificacionTests" name="testSomething" time="0.13" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="17" name="PermisoTests" package="org.trapo" tests="1" time="0.31" timestamp="2012-11-16T02:15:34">
+      <properties />
+
+      <testcase classname="org.trapo.PermisoTests" name="testSomething" time="0.17" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Joss-HP" id="18" name="PlanEducativoControllerTests" package="org.trapo" tests="8" time="0.97" timestamp="2012-11-16T02:15:35">
+      <properties />
+
+      <testcase classname="org.trapo.PlanEducativoControllerTests" name="testCreate" time="0.34" />
+
+      <testcase classname="org.trapo.PlanEducativoControllerTests" name="testEdit" time="0.1" />
+
+      <testcase classname="org.trapo.PlanEducativoControllerTests" name="testList" time="0.06" />
+
+      <testcase classname="org.trapo.PlanEducativoControllerTests" name="testUpdate" time="0.08">
+          <failure message="Assertion failed: &#xa;&#xa;assert view == &quot;/planEducativo/edit&quot;&#xa;       |    |&#xa;       null false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert view == &quot;/planEducativo/edit&quot;
+       |    |
+       null false
+
+	at org.trapo.PlanEducativoControllerTests.testUpdate(PlanEducativoControllerTests.groovy:123)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.PlanEducativoControllerTests" name="testIndex" time="0.05" />
+
+      <testcase classname="org.trapo.PlanEducativoControllerTests" name="testDelete" time="0.06" />
+
+      <testcase classname="org.trapo.PlanEducativoControllerTests" name="testSave" time="0.06" />
+
+      <testcase classname="org.trapo.PlanEducativoControllerTests" name="testShow" time="0.06" />
+
+      <system-out><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="19" name="PlanEducativoTests" package="org.trapo" tests="1" time="0.23" timestamp="2012-11-16T02:15:36">
+      <properties />
+
+      <testcase classname="org.trapo.PlanEducativoTests" name="testSomething" time="0.14" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="20" name="ReporteTests" package="org.trapo" tests="1" time="0.19" timestamp="2012-11-16T02:15:36">
+      <properties />
+
+      <testcase classname="org.trapo.ReporteTests" name="testSomething" time="0.1" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="21" name="SolicitudTests" package="org.trapo" tests="1" time="0.32" timestamp="2012-11-16T02:15:36">
+      <properties />
+
+      <testcase classname="org.trapo.SolicitudTests" name="testSomething" time="0.12" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="5" hostname="Joss-HP" id="22" name="UnidadAprendizajeControllerTests" package="org.trapo" tests="8" time="1.032" timestamp="2012-11-16T02:15:36">
+      <properties />
+
+      <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testCreate" time="0.442" />
+
+      <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testEdit" time="0.13">
+          <failure message="Assertion failed: &#xa;&#xa;assert unidadAprendizaje.save() != null&#xa;       |                 |      |&#xa;       0 null            null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+	at org.trapo.UnidadAprendizajeControllerTests.testEdit(UnidadAprendizajeControllerTests.groovy:80)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testList" time="0.07" />
+
+      <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testUpdate" time="0.07">
+          <failure message="Assertion failed: &#xa;&#xa;assert unidadAprendizaje.save() != null&#xa;       |                 |      |&#xa;       0 null            null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+	at org.trapo.UnidadAprendizajeControllerTests.testUpdate(UnidadAprendizajeControllerTests.groovy:100)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testIndex" time="0.05" />
+
+      <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testDelete" time="0.05">
+          <failure message="Assertion failed: &#xa;&#xa;assert unidadAprendizaje.save() != null&#xa;       |                 |      |&#xa;       0 null            null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+	at org.trapo.UnidadAprendizajeControllerTests.testDelete(UnidadAprendizajeControllerTests.groovy:144)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testSave" time="0.05">
+          <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/unidadAprendizaje/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1404cf5&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/unidadAprendizaje/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1404cf5
+
+	at org.trapo.UnidadAprendizajeControllerTests.testSave(UnidadAprendizajeControllerTests.groovy:48)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testShow" time="0.05">
+          <failure message="Assertion failed: &#xa;&#xa;assert unidadAprendizaje.save() != null&#xa;       |                 |      |&#xa;       0 null            null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+	at org.trapo.UnidadAprendizajeControllerTests.testShow(UnidadAprendizajeControllerTests.groovy:62)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="23" name="UnidadAprendizajeTests" package="org.trapo" tests="1" time="0.27" timestamp="2012-11-16T02:15:37">
+      <properties />
+
+      <testcase classname="org.trapo.UnidadAprendizajeTests" name="testSomething" time="0.14" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="5" hostname="Joss-HP" id="24" name="UsuarioControllerTests" package="org.trapo" tests="8" time="1.012" timestamp="2012-11-16T02:15:38">
+      <properties />
+
+      <testcase classname="org.trapo.UsuarioControllerTests" name="testCreate" time="0.33" />
+
+      <testcase classname="org.trapo.UsuarioControllerTests" name="testEdit" time="0.11">
+          <failure message="Assertion failed: &#xa;&#xa;assert usuario.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       null null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+	at org.trapo.UsuarioControllerTests.testEdit(UsuarioControllerTests.groovy:80)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.UsuarioControllerTests" name="testList" time="0.08" />
+
+      <testcase classname="org.trapo.UsuarioControllerTests" name="testUpdate" time="0.08">
+          <failure message="Assertion failed: &#xa;&#xa;assert usuario.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       null null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+	at org.trapo.UsuarioControllerTests.testUpdate(UsuarioControllerTests.groovy:100)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.UsuarioControllerTests" name="testIndex" time="0.05" />
+
+      <testcase classname="org.trapo.UsuarioControllerTests" name="testDelete" time="0.07">
+          <failure message="Assertion failed: &#xa;&#xa;assert usuario.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       null null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+	at org.trapo.UsuarioControllerTests.testDelete(UsuarioControllerTests.groovy:144)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.UsuarioControllerTests" name="testSave" time="0.092">
+          <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/usuario/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@15bb910&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/usuario/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@15bb910
+
+	at org.trapo.UsuarioControllerTests.testSave(UsuarioControllerTests.groovy:48)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.trapo.UsuarioControllerTests" name="testShow" time="0.07">
+          <failure message="Assertion failed: &#xa;&#xa;assert usuario.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       null null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+	at org.trapo.UsuarioControllerTests.testShow(UsuarioControllerTests.groovy:62)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="25" name="UsuarioServiceTests" package="org.trapo" tests="1" time="0.12" timestamp="2012-11-16T02:15:39">
+      <properties />
+
+      <testcase classname="org.trapo.UsuarioServiceTests" name="testSomething" time="0.04" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Joss-HP" id="26" name="UsuarioTests" package="org.trapo" tests="1" time="0.06" timestamp="2012-11-16T02:15:39">
+      <properties />
+
+      <testcase classname="org.trapo.UsuarioTests" name="testSomething" time="0.06" />
+
+      <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

@@ -1,0 +1,46 @@
+Testsuite: org.trapo.DocenteControllerTests
+Tests run: 8, Failures: 1, Errors: 0, Time elapsed: 1.04 sec
+------------- Standard Output ---------------
+--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+------------- ---------------- ---------------
+
+Testcase: testCreate took 0.34 sec
+Testcase: testEdit took 0.13 sec
+Testcase: testList took 0.07 sec
+Testcase: testUpdate took 0.09 sec
+	FAILED
+Assertion failed: 
+
+assert view == "/docente/edit"
+       |    |
+       null false
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert view == "/docente/edit"
+       |    |
+       null false
+
+	at org.trapo.DocenteControllerTests.testUpdate(DocenteControllerTests.groovy:113)
+
+Testcase: testIndex took 0.09 sec
+Testcase: testDelete took 0.06 sec
+Testcase: testSave took 0.07 sec
+Testcase: testShow took 0.06 sec

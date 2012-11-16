@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="5" hostname="Joss-HP" name="org.trapo.UsuarioControllerTests" tests="8" time="1.012" timestamp="2012-11-16T02:15:38">
+  <properties />
+  <testcase classname="org.trapo.UsuarioControllerTests" name="testCreate" time="0.33" />
+  <testcase classname="org.trapo.UsuarioControllerTests" name="testEdit" time="0.11">
+    <failure message="Assertion failed: &#xa;&#xa;assert usuario.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       null null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+	at org.trapo.UsuarioControllerTests.testEdit(UsuarioControllerTests.groovy:80)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.UsuarioControllerTests" name="testList" time="0.08" />
+  <testcase classname="org.trapo.UsuarioControllerTests" name="testUpdate" time="0.08">
+    <failure message="Assertion failed: &#xa;&#xa;assert usuario.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       null null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+	at org.trapo.UsuarioControllerTests.testUpdate(UsuarioControllerTests.groovy:100)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.UsuarioControllerTests" name="testIndex" time="0.05" />
+  <testcase classname="org.trapo.UsuarioControllerTests" name="testDelete" time="0.07">
+    <failure message="Assertion failed: &#xa;&#xa;assert usuario.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       null null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+	at org.trapo.UsuarioControllerTests.testDelete(UsuarioControllerTests.groovy:144)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.UsuarioControllerTests" name="testSave" time="0.092">
+    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/usuario/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@15bb910&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/usuario/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@15bb910
+
+	at org.trapo.UsuarioControllerTests.testSave(UsuarioControllerTests.groovy:48)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.UsuarioControllerTests" name="testShow" time="0.07">
+    <failure message="Assertion failed: &#xa;&#xa;assert usuario.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       null null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+	at org.trapo.UsuarioControllerTests.testShow(UsuarioControllerTests.groovy:62)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-out>
+  <system-err><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-err>
+</testsuite>

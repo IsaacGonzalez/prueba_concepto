@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="Joss-HP" name="org.trapo.PlanEducativoControllerTests" tests="8" time="0.97" timestamp="2012-11-16T02:15:35">
+  <properties />
+  <testcase classname="org.trapo.PlanEducativoControllerTests" name="testCreate" time="0.34" />
+  <testcase classname="org.trapo.PlanEducativoControllerTests" name="testEdit" time="0.1" />
+  <testcase classname="org.trapo.PlanEducativoControllerTests" name="testList" time="0.06" />
+  <testcase classname="org.trapo.PlanEducativoControllerTests" name="testUpdate" time="0.08">
+    <failure message="Assertion failed: &#xa;&#xa;assert view == &quot;/planEducativo/edit&quot;&#xa;       |    |&#xa;       null false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert view == &quot;/planEducativo/edit&quot;
+       |    |
+       null false
+
+	at org.trapo.PlanEducativoControllerTests.testUpdate(PlanEducativoControllerTests.groovy:123)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.PlanEducativoControllerTests" name="testIndex" time="0.05" />
+  <testcase classname="org.trapo.PlanEducativoControllerTests" name="testDelete" time="0.06" />
+  <testcase classname="org.trapo.PlanEducativoControllerTests" name="testSave" time="0.06" />
+  <testcase classname="org.trapo.PlanEducativoControllerTests" name="testShow" time="0.06" />
+  <system-out><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-out>
+  <system-err><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-err>
+</testsuite>

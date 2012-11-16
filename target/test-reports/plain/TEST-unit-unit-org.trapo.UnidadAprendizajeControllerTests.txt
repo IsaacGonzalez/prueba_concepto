@@ -1,0 +1,108 @@
+Testsuite: org.trapo.UnidadAprendizajeControllerTests
+Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 1.032 sec
+------------- Standard Output ---------------
+--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+------------- ---------------- ---------------
+
+Testcase: testCreate took 0.442 sec
+Testcase: testEdit took 0.13 sec
+	FAILED
+Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+	at org.trapo.UnidadAprendizajeControllerTests.testEdit(UnidadAprendizajeControllerTests.groovy:80)
+
+Testcase: testList took 0.07 sec
+Testcase: testUpdate took 0.07 sec
+	FAILED
+Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+	at org.trapo.UnidadAprendizajeControllerTests.testUpdate(UnidadAprendizajeControllerTests.groovy:100)
+
+Testcase: testIndex took 0.05 sec
+Testcase: testDelete took 0.05 sec
+	FAILED
+Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+	at org.trapo.UnidadAprendizajeControllerTests.testDelete(UnidadAprendizajeControllerTests.groovy:144)
+
+Testcase: testSave took 0.05 sec
+	FAILED
+Assertion failed: 
+
+assert response.redirectedUrl == '/unidadAprendizaje/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1404cf5
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == '/unidadAprendizaje/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1404cf5
+
+	at org.trapo.UnidadAprendizajeControllerTests.testSave(UnidadAprendizajeControllerTests.groovy:48)
+
+Testcase: testShow took 0.05 sec
+	FAILED
+Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+	at org.trapo.UnidadAprendizajeControllerTests.testShow(UnidadAprendizajeControllerTests.groovy:62)
+

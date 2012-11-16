@@ -1,0 +1,116 @@
+Testsuite: org.trapo.NotificacionControllerTests
+Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 1.033 sec
+------------- Standard Output ---------------
+--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+------------- ---------------- ---------------
+
+Testcase: testCreate took 0.321 sec
+Testcase: testEdit took 0.14 sec
+	FAILED
+Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+	at org.trapo.NotificacionControllerTests.testEdit(NotificacionControllerTests.groovy:104)
+
+Testcase: testList took 0.084 sec
+Testcase: testUpdate took 0.095 sec
+	FAILED
+Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+	at org.trapo.NotificacionControllerTests.testUpdate(NotificacionControllerTests.groovy:124)
+
+Testcase: testIndex took 0.064 sec
+Testcase: testDelete took 0.06 sec
+	FAILED
+Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+	at org.trapo.NotificacionControllerTests.testDelete(NotificacionControllerTests.groovy:168)
+
+Testcase: testSave took 0.07 sec
+	FAILED
+Assertion failed: 
+
+assert response.redirectedUrl == '/notificacion/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@f11f97
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == '/notificacion/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@f11f97
+
+	at org.trapo.NotificacionControllerTests.testSave(NotificacionControllerTests.groovy:72)
+
+Testcase: testShow took 0.06 sec
+	FAILED
+Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+	at org.trapo.NotificacionControllerTests.testShow(NotificacionControllerTests.groovy:86)
+

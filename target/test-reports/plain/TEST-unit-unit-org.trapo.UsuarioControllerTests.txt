@@ -1,0 +1,116 @@
+Testsuite: org.trapo.UsuarioControllerTests
+Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 1.012 sec
+------------- Standard Output ---------------
+--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+------------- ---------------- ---------------
+
+Testcase: testCreate took 0.33 sec
+Testcase: testEdit took 0.11 sec
+	FAILED
+Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+	at org.trapo.UsuarioControllerTests.testEdit(UsuarioControllerTests.groovy:80)
+
+Testcase: testList took 0.08 sec
+Testcase: testUpdate took 0.08 sec
+	FAILED
+Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+	at org.trapo.UsuarioControllerTests.testUpdate(UsuarioControllerTests.groovy:100)
+
+Testcase: testIndex took 0.05 sec
+Testcase: testDelete took 0.06 sec
+	FAILED
+Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+	at org.trapo.UsuarioControllerTests.testDelete(UsuarioControllerTests.groovy:144)
+
+Testcase: testSave took 0.092 sec
+	FAILED
+Assertion failed: 
+
+assert response.redirectedUrl == '/usuario/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@15bb910
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == '/usuario/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@15bb910
+
+	at org.trapo.UsuarioControllerTests.testSave(UsuarioControllerTests.groovy:48)
+
+Testcase: testShow took 0.07 sec
+	FAILED
+Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert usuario.save() != null
+       |       |      |
+       |       null   false
+       null null
+
+	at org.trapo.UsuarioControllerTests.testShow(UsuarioControllerTests.groovy:62)
+

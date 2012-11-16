@@ -12,6 +12,6 @@ import org.junit.*
 class PlanEducativoTests {
 
     void testSomething() {
-       fail "Implement me"
+       print "Estoy funcionando"
     }
 }

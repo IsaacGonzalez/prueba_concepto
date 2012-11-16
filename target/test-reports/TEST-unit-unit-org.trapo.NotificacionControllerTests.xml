@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="5" hostname="Joss-HP" name="org.trapo.NotificacionControllerTests" tests="8" time="1.033" timestamp="2012-11-16T02:15:33">
+  <properties />
+  <testcase classname="org.trapo.NotificacionControllerTests" name="testCreate" time="0.321" />
+  <testcase classname="org.trapo.NotificacionControllerTests" name="testEdit" time="0.14">
+    <failure message="Assertion failed: &#xa;&#xa;assert notificacion.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       org.trapo.Notificacion : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+	at org.trapo.NotificacionControllerTests.testEdit(NotificacionControllerTests.groovy:104)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.NotificacionControllerTests" name="testList" time="0.084" />
+  <testcase classname="org.trapo.NotificacionControllerTests" name="testUpdate" time="0.096">
+    <failure message="Assertion failed: &#xa;&#xa;assert notificacion.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       org.trapo.Notificacion : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+	at org.trapo.NotificacionControllerTests.testUpdate(NotificacionControllerTests.groovy:124)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.NotificacionControllerTests" name="testIndex" time="0.064" />
+  <testcase classname="org.trapo.NotificacionControllerTests" name="testDelete" time="0.06">
+    <failure message="Assertion failed: &#xa;&#xa;assert notificacion.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       org.trapo.Notificacion : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+	at org.trapo.NotificacionControllerTests.testDelete(NotificacionControllerTests.groovy:168)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.NotificacionControllerTests" name="testSave" time="0.07">
+    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/notificacion/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@f11f97&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/notificacion/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@f11f97
+
+	at org.trapo.NotificacionControllerTests.testSave(NotificacionControllerTests.groovy:72)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.NotificacionControllerTests" name="testShow" time="0.06">
+    <failure message="Assertion failed: &#xa;&#xa;assert notificacion.save() != null&#xa;       |            |      |&#xa;       |            null   false&#xa;       org.trapo.Notificacion : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert notificacion.save() != null
+       |            |      |
+       |            null   false
+       org.trapo.Notificacion : null
+
+	at org.trapo.NotificacionControllerTests.testShow(NotificacionControllerTests.groovy:86)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-out>
+  <system-err><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-err>
+</testsuite>

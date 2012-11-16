@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="5" hostname="Joss-HP" name="org.trapo.UnidadAprendizajeControllerTests" tests="8" time="1.032" timestamp="2012-11-16T02:15:36">
+  <properties />
+  <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testCreate" time="0.442" />
+  <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testEdit" time="0.13">
+    <failure message="Assertion failed: &#xa;&#xa;assert unidadAprendizaje.save() != null&#xa;       |                 |      |&#xa;       0 null            null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+	at org.trapo.UnidadAprendizajeControllerTests.testEdit(UnidadAprendizajeControllerTests.groovy:80)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testList" time="0.07" />
+  <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testUpdate" time="0.07">
+    <failure message="Assertion failed: &#xa;&#xa;assert unidadAprendizaje.save() != null&#xa;       |                 |      |&#xa;       0 null            null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+	at org.trapo.UnidadAprendizajeControllerTests.testUpdate(UnidadAprendizajeControllerTests.groovy:100)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testIndex" time="0.05" />
+  <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testDelete" time="0.05">
+    <failure message="Assertion failed: &#xa;&#xa;assert unidadAprendizaje.save() != null&#xa;       |                 |      |&#xa;       0 null            null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+	at org.trapo.UnidadAprendizajeControllerTests.testDelete(UnidadAprendizajeControllerTests.groovy:144)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testSave" time="0.05">
+    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/unidadAprendizaje/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1404cf5&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/unidadAprendizaje/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@1404cf5
+
+	at org.trapo.UnidadAprendizajeControllerTests.testSave(UnidadAprendizajeControllerTests.groovy:48)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.UnidadAprendizajeControllerTests" name="testShow" time="0.05">
+    <failure message="Assertion failed: &#xa;&#xa;assert unidadAprendizaje.save() != null&#xa;       |                 |      |&#xa;       0 null            null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert unidadAprendizaje.save() != null
+       |                 |      |
+       0 null            null   false
+
+	at org.trapo.UnidadAprendizajeControllerTests.testShow(UnidadAprendizajeControllerTests.groovy:62)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-out>
+  <system-err><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-err>
+</testsuite>

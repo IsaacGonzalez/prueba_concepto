@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="Joss-HP" name="org.trapo.CoordinadorCarreraControllerTests" tests="8" time="1.154" timestamp="2012-11-16T02:15:28">
+  <properties />
+  <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testCreate" time="0.46" />
+  <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testEdit" time="0.164" />
+  <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testList" time="0.07" />
+  <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testUpdate" time="0.07">
+    <failure message="Assertion failed: &#xa;&#xa;assert view == &quot;/coordinadorCarrera/edit&quot;&#xa;       |    |&#xa;       null false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert view == &quot;/coordinadorCarrera/edit&quot;
+       |    |
+       null false
+
+	at org.trapo.CoordinadorCarreraControllerTests.testUpdate(CoordinadorCarreraControllerTests.groovy:113)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testIndex" time="0.05" />
+  <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testDelete" time="0.09" />
+  <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testSave" time="0.08" />
+  <testcase classname="org.trapo.CoordinadorCarreraControllerTests" name="testShow" time="0.05" />
+  <system-out><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-out>
+  <system-err><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-err>
+</testsuite>

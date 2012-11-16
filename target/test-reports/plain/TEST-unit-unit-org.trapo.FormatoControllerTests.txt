@@ -1,0 +1,116 @@
+Testsuite: org.trapo.FormatoControllerTests
+Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 0.98 sec
+------------- Standard Output ---------------
+--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+------------- ---------------- ---------------
+
+Testcase: testCreate took 0.37 sec
+Testcase: testEdit took 0.12 sec
+	FAILED
+Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+	at org.trapo.FormatoControllerTests.testEdit(FormatoControllerTests.groovy:86)
+
+Testcase: testList took 0.05 sec
+Testcase: testUpdate took 0.06 sec
+	FAILED
+Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+	at org.trapo.FormatoControllerTests.testUpdate(FormatoControllerTests.groovy:106)
+
+Testcase: testIndex took 0.05 sec
+Testcase: testDelete took 0.06 sec
+	FAILED
+Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+	at org.trapo.FormatoControllerTests.testDelete(FormatoControllerTests.groovy:150)
+
+Testcase: testSave took 0.06 sec
+	FAILED
+Assertion failed: 
+
+assert response.redirectedUrl == '/formato/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@29a876
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == '/formato/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@29a876
+
+	at org.trapo.FormatoControllerTests.testSave(FormatoControllerTests.groovy:54)
+
+Testcase: testShow took 0.06 sec
+	FAILED
+Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+	at org.trapo.FormatoControllerTests.testShow(FormatoControllerTests.groovy:68)
+

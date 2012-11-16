@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Joss-HP" name="org.trapo.DisponibilidadTests" tests="1" time="0.341" timestamp="2012-11-16T02:15:30">
+  <properties />
+  <testcase classname="org.trapo.DisponibilidadTests" name="testSomething" time="0.19" />
+  <system-out><![CDATA[--Output from testSomething--
+Estoy funcionando]]></system-out>
+  <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+</testsuite>

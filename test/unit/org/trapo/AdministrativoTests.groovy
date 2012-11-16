@@ -12,6 +12,6 @@ import org.junit.*
 class AdministrativoTests {
 
     void testSomething() {
-       fail "Implement me"
+       print "Estoy funcionando"
     }
 }

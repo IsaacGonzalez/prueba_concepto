@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="5" hostname="Joss-HP" name="org.trapo.FormatoControllerTests" tests="8" time="0.98" timestamp="2012-11-16T02:15:32">
+  <properties />
+  <testcase classname="org.trapo.FormatoControllerTests" name="testCreate" time="0.37" />
+  <testcase classname="org.trapo.FormatoControllerTests" name="testEdit" time="0.12">
+    <failure message="Assertion failed: &#xa;&#xa;assert formato.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       org.trapo.Formato : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+	at org.trapo.FormatoControllerTests.testEdit(FormatoControllerTests.groovy:86)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.FormatoControllerTests" name="testList" time="0.05" />
+  <testcase classname="org.trapo.FormatoControllerTests" name="testUpdate" time="0.06">
+    <failure message="Assertion failed: &#xa;&#xa;assert formato.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       org.trapo.Formato : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+	at org.trapo.FormatoControllerTests.testUpdate(FormatoControllerTests.groovy:106)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.FormatoControllerTests" name="testIndex" time="0.05" />
+  <testcase classname="org.trapo.FormatoControllerTests" name="testDelete" time="0.06">
+    <failure message="Assertion failed: &#xa;&#xa;assert formato.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       org.trapo.Formato : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+	at org.trapo.FormatoControllerTests.testDelete(FormatoControllerTests.groovy:150)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.FormatoControllerTests" name="testSave" time="0.06">
+    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/formato/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@29a876&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/formato/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@29a876
+
+	at org.trapo.FormatoControllerTests.testSave(FormatoControllerTests.groovy:54)
+</failure>
+  </testcase>
+  <testcase classname="org.trapo.FormatoControllerTests" name="testShow" time="0.06">
+    <failure message="Assertion failed: &#xa;&#xa;assert formato.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       org.trapo.Formato : null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert formato.save() != null
+       |       |      |
+       |       null   false
+       org.trapo.Formato : null
+
+	at org.trapo.FormatoControllerTests.testShow(FormatoControllerTests.groovy:68)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-out>
+  <system-err><![CDATA[--Output from testCreate--
+--Output from testEdit--
+--Output from testList--
+--Output from testUpdate--
+--Output from testIndex--
+--Output from testDelete--
+--Output from testSave--
+--Output from testShow--
+]]></system-err>
+</testsuite>
