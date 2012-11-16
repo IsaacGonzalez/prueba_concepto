@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package org.trapo
 
 import org.springframework.dao.DataIntegrityViolationException
@@ -100,3 +101,11 @@ class DocenteController {
         }
     }
 }
+=======
+package org.trapo
+
+class DocenteController {
+
+    def scaffold = Docente
+}
+>>>>>>> controladores
