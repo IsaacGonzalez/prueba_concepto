@@ -20,7 +20,7 @@ class Usuario extends User{
     	supervisor nullable: true        
     }
 
-    String toString(){
+    String toString(){        
     	this.nombre + " " + this.apellidos
     }
 }
