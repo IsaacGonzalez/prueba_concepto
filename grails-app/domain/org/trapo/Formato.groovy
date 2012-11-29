@@ -3,7 +3,7 @@ package org.trapo
 class Formato {
 	Usuario solicitante
 	Usuario autorizador
-	Date fechaCreacion
+	Date dateCreated
 	boolean estaCompleto
 	int estadoAvance // 0 o 1 por lo pronto
 
@@ -11,7 +11,7 @@ class Formato {
     	solicitante nullable: false
     	autorizador nullable: false
         // tiene bugs todavia
-        fechaCreacion nullable: false, validator: {
+        dateCreated nullable: false, validator: {
             it >= new Date()-1
         }
     	estaCompleto nullable: false

@@ -52,7 +52,7 @@ body {
 #grailsLogo {	
 	-webkit-border-radius: 15px 15px 0px 0px;
     		border-radius: 15px 15px 0px 0px;
-	background-color: #abbf78;
+	background-color: #007141;
 }
 #grailsLogo a img{
 
@@ -128,7 +128,7 @@ img {
 }
 
 .footer {
-	background: #abbf78;
+	background: #007141;
 	color: #000;
 	clear: both;
 	font-size: 0.8em;
