@@ -10,8 +10,8 @@ static constraints = {
 fecha blank:false, validator: { it >= new Date()-1} 
 tipopermiso blank:false,inList: ["Permiso sin goce de sueldo", 
 "Permiso económico", "Licencia con goce de sueldo", "Licencia sin goce de sueldo"]
-desde blank:false
-diaspermiso blank:false, validator: {it >= new Date()-1} 
+desde blank:false, validator: {it >= new Date()-1}
+diaspermiso blank:false 
 motivo blank:false, maxSize:2500
 }
 }
