@@ -1,7 +1,7 @@
 dataSource {
     pooled = true
     driverClassName = "com.mysql.jdbc.Driver"
-    username = "grails"
+    username = "root"
     password = ""
 }
 hibernate {
