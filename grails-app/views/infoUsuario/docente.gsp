@@ -87,13 +87,21 @@
 	<body>
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div id="status" role="complementary">
-			<h1>Trámites ${session.ID_Usuario}</h1>
+			<h2>ID ${session.ID_Usuario} </h2>
+			<h2>Nombres ${session.nombres} </h2>
+			<h2>Apellidos ${session.apellidos} </h2>
+			<h2>Area ${session.area} </h2>
+			<h2>Facultad ${session.facultad} </h2>
+
+
+			<h1>Trámites  </h1>
 			<ul>
-			<li><g:link controller="ActividadesPtcPmt" action="create">Formato de disponibilidad de Horario</g:link></li>
+			<li><g:link controller="ActividadesPtcPmt" action="create">Actividades Ptc y Ptm</g:link></li>
 			<li><g:link controller="AvanceContenidosTematicos" action="create">Formato de avances de contenidos tematicos</g:link></li>
 			<li><g:link controller="Disponibilidad" action="create">Formato de disponibilidad de Horario</g:link></li>
 			<li><g:link controller="Comision" action="create">Formato de solicitud de comision y salidas académicas</g:link>
-			<li><g:link controller="ExamenesOrdExtraord" action="create">Formato de solicitud de comision y salidas académicas</g:link></li>
+			<li><g:link controller="ExamenesOrdExtraord" action="create">Examenes ordinarios y extraordinarios</g:link></li>
+			<g:link controller="Permisos" action="create">Solicitud de permisos</g:link></li>
 			</ul>
 			%{-- <h1>Installed Plugins</h1>
 			<ul>
@@ -104,7 +112,10 @@
 		</div>
 		<div id="page-body" role="main">
 			<h1>Proyecto <code id="nombreProyecto">TRAPO</code></h1>			
-
+			<h2>Nombres ${session.coordinadorCarrera} </h2>
+			<h2>Apellidos ${session.programaEducativo} </h2>
+			<h2>Area ${session.materias} </h2>
+			
 			
 		</div>
 	</body>

@@ -14,16 +14,19 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 'apple-touch-icon-retina.png')}">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
+
 		<g:layoutHead/>
 		<r:layoutResources />
 	</head>
 	<body>
 		<div id="pagewrapper">
 			<div id="grailsLogo" role="banner">
+			
 				<a href="${grailsApplication}">
 					<img src="${resource(dir: 'images', file: 'logo_uabc.png')}" alt="Trapo"/>
 					<h1 id="titulo">Proyecto Trapo</span>
 				</a>
+				<g:link controller="Login" action="logout">Cerrar sesión</g:link>
 			</div>
 
 			%{-- Aqui va el codigo de las views que lo llamen --}%

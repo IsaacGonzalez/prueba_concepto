@@ -8,7 +8,12 @@ class LoginController {
     	render(view:"login")
      }
 
-   
+     def logout() {
+        log.info "User agent: " + request.getHeader("User-Agent")
+        session.invalidate()
+        render(index())
+    }
+    
     def getUsuarios = {
     	def correo = params.correo
     	def password = params.password
@@ -16,14 +21,12 @@ class LoginController {
   		//println(password)
   		def usuario = autenticarUsuarios(correo, password)    	
     	redirect(controller: "InfoUsuario", action:"index", params: usuario)
-
-    	
     }
 
     def autenticarUsuarios(correo, password) {
     def host = "192.168.1.9"
 		def base="http://"+host+":8080/informacion_empleados/usuarioSignOn/autenticarUsuarios?"
-  		def attrs = []
+  	def attrs = []
   		
   		//VERIFICA QUE SE INGRESO UN CORREO
   		if(correo){
@@ -52,9 +55,8 @@ class LoginController {
 
     		usuarios.correo=variables.correo[0] as String
     		usuarios.numeroEmpleado=variables.numeroEmpleado[0] as String
-        
-        usuarios.
-    		
+
+      
     	//MENSAJE DE ERROR
     	}else{
     		println("Error en la conexión intente de nuevo")

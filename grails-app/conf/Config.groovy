@@ -59,6 +59,8 @@ grails.exceptionresolver.params.exclude = ['password']
 // configure auto-caching of queries by default (if false you can cache individual queries with 'cache: true')
 grails.hibernate.cache.queries = false
 
+//VARIABLE PARA LA DIRECCION DE SERVER DE CORREOS 
+//grails.mail.host= "localhost"
 environments {
     development {
         grails.logging.jul.usebridge = true

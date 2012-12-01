@@ -87,13 +87,20 @@
 	<body>
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div id="status" role="complementary">
+<h2>ID ${session.ID_Usuario} </h2>
+			<h2>Nombres ${session.nombres} </h2>
+			<h2>Apellidos ${session.apellidos} </h2>
+			<h2>Area ${session.area} </h2>
+			<h2>Facultad ${session.facultad} </h2>
+			
 			<h1>Trámites</h1>
 			<ul>
 			<li><g:link controller="Permisos" action="create">Formato de Permisos
 			</g:link></li>
-			<li><g:link controller="Solicitud" action="create">Formato de solicitud de comision y salidas académicas
-			</g:link></li>
+			<li><g:link controller="Solicitud" action="create">Formato de solicitud de comision y salidas académicas</g:link></li>
+			<li><g:link controller="Correo" action="index">Notificaciones</g:link></li>
 			</ul>
+
 			%{-- <h1>Installed Plugins</h1>
 			<ul>
 				<g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
