@@ -2,25 +2,23 @@ package org.trapo
 import groovy.json.*
 import grails.converters.*
 
+
 class InfoUsuarioController {
 
 def index (){
 	def id= params.numeroEmpleado
-	//render id
-	def tipo= getTipo(id)
-	
-	println(tipo)
-	render(view: tipo.tipo)
+  def nombre = params.nombre
+	def tipo= getTipoDeUsuario(id)
 
+  session["ID_Usuario"] = id
+  println session["ID_Usuario"]
+	render(view: tipo.tipo)
 }
 
 
-
- //    def index() { }
-
- def getTipo(id) {
+ def getTipoDeUsuario(id) {
   	//SignOnService
-		def host = "192.168.1.65"
+		def host = "192.168.1.9"
 		def base="http://"+host+":8080/informacion_empleados/usuario/getCategoria?"
   		def attrs = []
   		

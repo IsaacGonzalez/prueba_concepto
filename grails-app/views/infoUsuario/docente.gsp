@@ -83,11 +83,11 @@
 				font-size: 24px;
 			}
 		</style>
-	</head>
+			</head>
 	<body>
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div id="status" role="complementary">
-			<h1>Trámites</h1>
+			<h1>Trámites ${session.ID_Usuario}</h1>
 			<ul>
 			<li><g:link controller="ActividadesPtcPmt" action="create">Formato de disponibilidad de Horario</g:link></li>
 			<li><g:link controller="AvanceContenidosTematicos" action="create">Formato de avances de contenidos tematicos</g:link></li>

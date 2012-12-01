@@ -21,7 +21,7 @@ class LoginController {
     }
 
     def autenticarUsuarios(correo, password) {
-    def host = "192.168.1.65"
+    def host = "192.168.1.9"
 		def base="http://"+host+":8080/informacion_empleados/usuarioSignOn/autenticarUsuarios?"
   		def attrs = []
   		
@@ -52,6 +52,8 @@ class LoginController {
 
     		usuarios.correo=variables.correo[0] as String
     		usuarios.numeroEmpleado=variables.numeroEmpleado[0] as String
+        
+        usuarios.
     		
     	//MENSAJE DE ERROR
     	}else{
