@@ -15,6 +15,7 @@ def index (){
   //SI ES DOCENTE LLAMA AL SERVICIO QUE OBTIENE LAS MATERIAS DE LOS DOCENTES
   if(usuario.tipo=="Docente"){
   getInformacionDocente(id)
+
   }
 
   //NOS REDIRIGE A LA VISTA CORRESPONDIENTE AL TIPO DE USUARIO
@@ -52,6 +53,15 @@ def getTipoDeUsuario(id) {
         session["area"] = variables.area[0]
         session["facultad"] = variables.facultad[0]
  
+
+        if(variables.area=="computacion"){
+          session["supervisorCordinacion"]=="Aglay"
+          session["supervisorAreaIngSoftware"]=="M.C. Martin Olguin"
+          session["supervisorAreaControl"]=="M.C. Neuman"
+          session["supervisorAreaRedes"]=="M.C. Isaac "          
+        }
+
+
     	//MENSAJE DE ERROR
     	}else{
     		println("Error en la conexión intente de nuevo")

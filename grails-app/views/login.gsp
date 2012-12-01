@@ -9,9 +9,7 @@ content="text/html; charset=UTF-8"/>
 		<div class="body">
 		<h1>Login</h1>
 			%{--  --}%
-<g:if test="${session[ID_usuario]} != null">
-si entro
-</g:if>
+
 <g:form url="[action:'getUsuarios',controller:'Login']" method="post" >
 
 		<div class="dialog">

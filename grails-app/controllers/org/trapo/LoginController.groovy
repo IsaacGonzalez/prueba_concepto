@@ -10,15 +10,12 @@ class LoginController {
 
      def logout() {
         log.info "User agent: " + request.getHeader("User-Agent")
-        session.invalidate()
-        render(index())
+        session.invalidate()        
     }
     
     def getUsuarios = {
     	def correo = params.correo
     	def password = params.password
-  		//println(correo)
-  		//println(password)
   		def usuario = autenticarUsuarios(correo, password)    	
     	redirect(controller: "InfoUsuario", action:"index", params: usuario)
     }
@@ -61,7 +58,7 @@ class LoginController {
     	}else{
     		println("Error en la conexión intente de nuevo")
     		println(url);
-    		println(connection.response)
+    		//println(connection.response)
     	}
 
     	return usuarios
