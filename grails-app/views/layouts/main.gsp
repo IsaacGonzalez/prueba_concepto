@@ -22,7 +22,7 @@
 		<div id="pagewrapper">
 			<div id="grailsLogo" role="banner">
 			
-				<a href="${grailsApplication}">
+				<a href="${createLink(uri: '/')}">
 					<img src="${resource(dir: 'images', file: 'logo_uabc.png')}" alt="Trapo"/>
 					<h1 id="titulo">Proyecto Trapo</span>
 				</a>
