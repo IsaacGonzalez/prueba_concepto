@@ -15,7 +15,6 @@ def index (){
   //SI ES DOCENTE LLAMA AL SERVICIO QUE OBTIENE LAS MATERIAS DE LOS DOCENTES
   if(usuario.tipo=="Docente"){
   getInformacionDocente(id)
-
   }
 
   //NOS REDIRIGE A LA VISTA CORRESPONDIENTE AL TIPO DE USUARIO
@@ -24,7 +23,7 @@ def index (){
 
 def getTipoDeUsuario(id) {
   	//SignOnService
-		def host = "192.168.1.9"
+		def host = "192.168.1.22"
 		def base="http://"+host+":8080/informacion_empleados/usuario/getUsuarios?"
   	def attrs = []
   		
@@ -54,12 +53,7 @@ def getTipoDeUsuario(id) {
         session["facultad"] = variables.facultad[0]
  
 
-        if(variables.area=="computacion"){
-          session["supervisorCordinacion"]=="Aglay"
-          session["supervisorAreaIngSoftware"]=="M.C. Martin Olguin"
-          session["supervisorAreaControl"]=="M.C. Neuman"
-          session["supervisorAreaRedes"]=="M.C. Isaac "          
-        }
+        
 
 
     	//MENSAJE DE ERROR
@@ -74,7 +68,7 @@ def getTipoDeUsuario(id) {
     }
 
 def getInformacionDocente(id){
-def host = "192.168.1.9"
+def host = "192.168.1.22"
 def base="http://"+host+":8080/informacion_empleados/docente/getDocentes?"
 def attrs = []
 
@@ -92,9 +86,45 @@ if(connection.responseCode==200){
 //PARSE DEL TEXTO RECIBIDO A JSON
 def contenido = connection.content.text
 def variables = new JsonSlurper().parseText( contenido )
-session["materias"]=variables.carga.nombre
-session['programaEducativo']=variables.programaEducativo
+usuarios.materias=variables.carga.nombre
+usuarios.programaEducativo=variables.programaEducativo
+
+session["materias"]=usuarios.materias
+session['programaEducativo']=usuarios.programaEducativo
 session['coordinadorCarrera']=variables.coordinadorCarrera
+
+//MENSAJE DE ERROR
+}else{
+println("Error en la conexión intente de nuevo")
+println(url);
+println(connection.response)
+}
+return usuarios
+}
+
+//METODO EL CUAL OBTIENE LOS SUPERVISORES DE LOS EMPLEADOS
+def getSupervisores(area){
+def host = "192.168.1.22"
+def base="http://"+host+":8080/informacion_empleados/docente/getSupervisor?"
+def attrs = []
+
+if(id){
+attrs << "area="+area
+}else{
+return 
+}
+
+//CREA EL URL AL CUAL SE CONECTARA
+def url= new URL(base+attrs.join('&'))
+def connection = url.openConnection()
+def supervisores = [:]
+//SI LA RESPUESTA ES EXITOSA
+if(connection.responseCode==200){
+//PARSE DEL TEXTO RECIBIDO A JSON
+def contenido = connection.content.text
+def variables = new JsonSlurper().parseText( contenido )
+session[""]=variables.supervisores
+
 
 
 //MENSAJE DE ERROR
@@ -104,8 +134,14 @@ println(url);
 println(connection.response)
 }
 
-return usuarios
+return supervisores
 }
+
+
+
+
+
+
 
 
 }
