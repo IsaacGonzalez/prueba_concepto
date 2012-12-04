@@ -7,7 +7,7 @@
 		<g:message code="actividadesPtcPmt.solicitante.label" default="Solicitante" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="solicitante" name="solicitante.id" from="${org.trapo.Usuario.list()}" optionKey="id" required="" value="${actividadesPtcPmtInstance?.solicitante?.id}" class="many-to-one"/>
+	<g:textField id="solicitante" name="solicitante.id"  optionKey="id" required="" value="${session.ID_Usuario}" class="many-to-one"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: actividadesPtcPmtInstance, field: 'autorizador', 'error')} required">
@@ -15,7 +15,7 @@
 		<g:message code="actividadesPtcPmt.autorizador.label" default="Autorizador" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="autorizador" name="autorizador.id" from="${org.trapo.Usuario.list()}" optionKey="id" required="" value="${actividadesPtcPmtInstance?.autorizador?.id}" class="many-to-one"/>
+	<g:textField id="autorizador" name="autorizador.id"  optionKey="id" required="" value="${session.ID_Usuario}" class="many-to-one"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: actividadesPtcPmtInstance, field: 'fechaCreacion', 'error')} required">

@@ -8,7 +8,7 @@
 				background-color: #eee;
 				border: .2em solid #fff;
 				margin: 2em 2em 1em;
-				padding: 1em;
+				padding: 0.5em;
 				width: 12em;
 				float: left;
 				-moz-box-shadow: 0px 0px 1.25em #ccc;
@@ -87,11 +87,7 @@
 	<body>
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div id="status" role="complementary">
-<h2>ID ${session.ID_Usuario} </h2>
-			<h2>Nombres ${session.nombres} </h2>
-			<h2>Apellidos ${session.apellidos} </h2>
-			<h2>Area ${session.area} </h2>
-			<h2>Facultad ${session.facultad} </h2>
+
 			
 			<h1>Trámites</h1>
 			<ul>
@@ -109,9 +105,22 @@
 			</ul> --}%
 		</div>
 		<div id="page-body" role="main">
-			<h1>Proyecto <code id="nombreProyecto">TRAPO</code></h1>			
-
-			
+			<h2>Bienvenido</h2>		
+			<table>
+				<tr>
+					<th>Matricula </th>
+					<th>Nombre </th>
+					<th>Área  </th>
+					<th>Facultad  </th>
+					
+				</tr>
+				<tr>
+					<td>${session.ID_Usuario} </td>
+					<td>${session.nombres} ${session.apellidos}</td>
+					<td>${session.programaEducativo} </td>
+					<td>${session.facultad} </td>
+				</tr>
+			</table>
 		</div>
 	</body>
 </html>

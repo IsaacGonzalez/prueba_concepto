@@ -7,7 +7,7 @@
 			<g:message code="comisionSalidasAcademicas.solicitante.label" default="Solicitante" />
 			<span class="required-indicator">*</span>
 		</label>
-		<g:textField id="solicitante" name="solicitante.id"  optionKey="id" required="" value="${session.nombres} ${session.apellidos}" class="many-to-one"/>
+		<g:textField id="solicitante" name="solicitante.id"  optionKey="id" required="" value="${session.ID_Usuario}" class="many-to-one"/>
 	</div>
 
 	<div class="fieldcontain ${hasErrors(bean: comisionSalidasAcademicasInstance, field: 'autorizador', 'error')} required">
@@ -15,7 +15,7 @@
 			<g:message code="comisionSalidasAcademicas.autorizador.label" default="Autorizador" />
 			<span class="required-indicator">*</span>
 		</label>
-		<g:textField id="autorizador" name="autorizador.id" optionKey="id" required="" value="${session.nombres} ${session.apellidos}" class="many-to-one"/>
+		<g:textField id="autorizador" name="autorizador.id" optionKey="id" required="" value="${session.ID_Usuario}" class="many-to-one"/>
 	</div>
 <!---->
 

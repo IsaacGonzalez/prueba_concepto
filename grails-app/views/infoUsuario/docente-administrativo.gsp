@@ -112,6 +112,21 @@
 		<div id="page-body" role="main">
 			<h1>Proyecto <code id="nombreProyecto">TRAPO</code></h1>			
 
+			<table>
+				<tr>
+					<th>Matricula </th>
+					<th>Nombre </th>
+					<th>Área  </th>
+					<th>Facultad  </th>
+					
+				</tr>
+				<tr>
+					<td>${session.ID_Usuario} </td>
+					<td>${session.nombres} ${session.apellidos}</td>
+					<td>${session.programaEducativo} </td>
+					<td>${session.facultad} </td>
+				</tr>
+			</table>
 			
 		</div>
 	</body>
