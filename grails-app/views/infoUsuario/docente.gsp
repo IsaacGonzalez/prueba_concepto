@@ -102,9 +102,9 @@
 			<li><g:link controller="ActividadesPtcPmt" action="create">Actividades Ptc y Ptm</g:link></li>
 			<li><g:link controller="AvanceContenidosTematicos" action="create">Formato de avances de contenidos tematicos</g:link></li>
 			<li><g:link controller="Disponibilidad" action="create">Formato de disponibilidad de Horario</g:link></li>
-			<li><g:link controller="Comision" action="create">Formato de solicitud de comision y salidas académicas</g:link>
+			<li><g:link controller="comisionSalidasAcademicas" action="create">Formato de solicitud de comision y salidas académicas</g:link>
 			<li><g:link controller="ExamenesOrdExtraord" action="create">Examenes ordinarios y extraordinarios</g:link></li>
-			<g:link controller="Permisos" action="create">Solicitud de permisos</g:link></li>
+			<g:link controller="Permiso" action="create">Solicitud de permisos</g:link></li>
 			</ul>
 		
 		</div>
